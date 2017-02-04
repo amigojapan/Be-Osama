@@ -1,0 +1,2052 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+
+	
+
+<!-- machid: WkFSZzctYUFHdmo2Z2xuTHJKb0dJUjVVdVp6MmtmazdiVmgteU14bUUwZENaM0RmcE44c0t3 -->
+
+
+	
+	<title>YouTube - Broadcast Yourself.</title>
+
+			<link rel="stylesheet" href="my_videos_upload_files/www-core-vfl114886.css">
+
+
+				<link rel="stylesheet" href="my_videos_upload_files/www-the-rest-vfl113204.css">
+
+		
+		
+		
+
+
+
+
+	
+
+
+
+
+			<script src="my_videos_upload_files/www-core-vfl114917.js"></script>
+
+
+
+		
+
+
+
+		<script type="text/javascript">
+			var gIsGoogleAnalyticsEnabled = false;
+			
+	var gXSRF_token = '';
+	var gXSRF_field_name = '';
+	var gXSRF_ql_pair = '';
+	var onLoadFunctionList = onLoadFunctionList || [];
+
+		gXSRF_token = '09HK4XByEiErT5qCxICzWFWTp798MTI1MDUzNDA1Nw==';
+		gXSRF_field_name = 'session_token';
+		onLoadFunctionList.push(function() { populate_session_token() });
+
+
+		gXSRF_ql_pair = 'session_token=RXQ10lqYF8CII_mdHONmi0QONud8MA==';
+
+
+
+
+
+		</script>
+
+		<script id="legacy-user-datastore" style=""></script>
+
+		
+	
+
+
+
+
+
+<!-- base href="http://www.youtube.com/" -->
+<script type="text/javascript" src="my_videos_upload_files/www-upload-vfl114917.js"></script>
+<script type="text/javascript">
+	var useScotty = false;
+	var useFlash = false;
+	var uploadUrl = "";
+
+		useScotty = true;
+		useFlash = false;
+		uploadUrl = "http://upload.youtube.com/my_videos_post";
+
+	// Register any localized strings.
+	yt.setMsg({
+		MSG_UPLOAD_ABANDON_TEXT: "Leaving this page will cancel any incomplete uploads. Click \'OK\' to continue, or \'Cancel\' to stay on the current page."
+	});
+
+	// Configure settings.
+	yt.www.upload.UploadSettings.set(yt.www.upload.UploadSettings.Keys.UPLOAD_URL, uploadUrl);
+	yt.www.upload.UploadSettings.set(yt.www.upload.UploadSettings.Keys.LOCALE, "en_US");
+	yt.www.upload.UploadSettings.set(yt.www.upload.UploadSettings.Keys.MAX_UPLOADS, 10);
+	yt.www.upload.UploadSettings.set(yt.www.upload.UploadSettings.Keys.SESSION_KEY, "u1bYjwk5Z8FY1250447657.8");
+	yt.www.upload.UploadSettings.set(yt.www.upload.UploadSettings.Keys.UPLOAD_KEY, "F046D9721B1617FE-6501BA247D8C0DCF");
+	yt.www.upload.UploadSettings.set(yt.www.upload.UploadSettings.Keys.ENABLE_FLASH, useFlash);
+	yt.www.upload.UploadSettings.set(yt.www.upload.UploadSettings.Keys.ENABLE_SCOTTY, useScotty);
+	yt.www.upload.UploadSettings.set(yt.www.upload.UploadSettings.Keys.MAX_BYTES, 2147483648);
+	yt.www.upload.UploadSettings.set(yt.www.upload.UploadSettings.Keys.FLASH_URL, "http://s.ytimg.com/yt/swf/uploaderapi-vfl113139.swf");
+
+	// Launch the uploader.
+	yt.www.upload.Main();
+</script>
+
+	<script type="text/javascript" src="my_videos_upload_files/googutil-vfl102487.js"></script>
+	<script type="text/javascript" src="my_videos_upload_files/autoshare-vfl112885.js"></script>
+	<script type="text/javascript">
+		
+		var fbConnectPopup;
+		var fbConnectPopupClosedId;
+
+		function prePerformFbConnectAction(action) {
+			switch (action) {
+				case 2:
+					var disconnectUrlCallback = function (xhr) {
+						if (xhr.responseXML) {
+							var root_node = getRootNode(xhr);
+							var url_args = getNodeValue(root_node, 'html_content');
+							performFbConnectAction(action, url_args);
+						}
+					}
+					ajaxRequest('/fb_connect_ajax', {postBody: "action_get_disconnect_url=1&session_token=x2u5zvNzIAFvfd452GLvkDoYA2l8MA==", onComplete: disconnectUrlCallback});
+					break;
+				case 4:
+					var permissionsUrlAndInfCallback = function (xhr) {
+						if (xhr.responseXML) {
+							var root_node = getRootNode(xhr);
+							var url_args = getNodeValue(root_node, 'html_content');
+							performFbConnectAction(action, url_args);
+						}
+					}
+					ajaxRequest('/fb_connect_ajax', {postBody: "action_get_permissions_url_and_info=1&session_token=x2u5zvNzIAFvfd452GLvkDoYA2l8MA==", onComplete: permissionsUrlAndInfCallback});
+					break;
+
+				default:
+			}
+		}
+
+		function performFbConnectAction(action, url_args) {
+			var connectFrame = _gel('connect-frame');
+			var iframeElement = _gel('fbConnectId');
+			if (!iframeElement) {
+				iframeElement = document.createElement('iframe');
+			}
+			iframeElement.setAttribute("id", "fbConnectId");
+			iframeElement.setAttribute("scrolling", "no");
+			iframeElement.setAttribute("frameborder", "0");
+			iframeElement.setAttribute("allowTransparency", "true");
+			iframeElement.setAttribute("width", "1");
+			iframeElement.setAttribute("height", "1");
+			iframeElement.setAttribute("style", "border: none;");
+			var url = "http://s.youtube-3rd-party.com/ytfb_connect.html?xsrf=UmJ9WlEknQsFd2lpyYbnqWOYb_d8MA==&base_url=http://www.youtube.com/";
+			switch (action) {
+				case 2:
+					url += "&tpmethod=disconnect&" + url_args;
+					break;
+				case 4:
+					url += "&tpmethod=get_permissions_url_and_info&" + url_args;
+				default:
+			}
+			iframeElement.setAttribute("src", url);
+			connectFrame.appendChild(iframeElement);
+		}
+
+		function displayFbConnectButton(showConnectButton, hasPermissions, firstName, lastName) {
+			if (fbConnectPopup) {
+				fbConnectPopup.close();
+			}
+
+			updateServiceUi('facebook', !showConnectButton, firstName + " " + lastName)
+			if (showConnectButton) {
+				if (hasPermissions == "0") {
+					showDiv('autoshare-facebook-nag');
+				} else {
+					hideDiv('autoshare-facebook-nag');
+				}
+			} else {
+				hideDiv('autoshare-facebook-nag');
+			}
+		}
+
+		function popupClosed() {
+			if (fbConnectPopup && fbConnectPopup.closed) {
+				squelchSpinnys();
+				clearInterval(fbConnectPopupClosedId);
+			}
+		}
+
+		function doConnect() {
+			var apiKey = "7ff82e59b6b2fbd316cca35309e95df3";
+			var nextUrl = "http://www.youtube.com/" + "fb_connect";
+			var cancelUrl = "http://www.youtube.com/" + "fb_connect?cancel=1";
+			var url = "http://www.facebook.com/login.php?" +
+				"return_session=1&nochrome=1&fbconnect=1&extern=1&connect_display=popup&" +
+				"api_key=" + apiKey + "&v=1.0&next=" + nextUrl + "&cancel_url=" + cancelUrl +
+				"&req_perms=" + encodeURIComponent('publish_stream') + "&locale=en_US";
+			fbConnectPopup = window.open(url, "fbConnectPopup", "location=yes,width=480,height=535,resizable=yes", true);
+			if (window.focus) {
+				fbConnectPopup.focus();
+			}
+			fbConnectPopupClosedId = setInterval("popupClosed()", 3000);
+			return false;
+		}
+
+		function squelchSpinnys() {
+				hideDiv('autoshare-service-connect-spinny-facebook');
+				hideDiv('autoshare-service-disconnect-spinny-facebook');
+				hideDiv('autoshare-service-connect-spinny-twitter');
+				hideDiv('autoshare-service-disconnect-spinny-twitter');
+				hideDiv('autoshare-service-connect-spinny-reader');
+				hideDiv('autoshare-service-disconnect-spinny-reader');
+		}
+
+		function updateServiceUi(service, is_connected, connected_as) {
+			_gel('autoshare-service-info-' + service).innerHTML = connected_as;
+			setDisplay(_gel('autoshare-service-add-' + service), !is_connected);
+			setDisplay(_gel('autoshare-service-info-' + service), is_connected);
+			setDisplay(_gel('autoshare-service-detail-' + service), is_connected);
+
+			// This is a ghetto mix of templates and JS.
+			var anyConnected = 0;
+			var anyToConnect = 0;
+				if (isDisplayed(_gel('autoshare-service-info-' + 'facebook'))) {
+					anyConnected++;
+				}
+				if (isDisplayed(_gel('autoshare-service-add-' + 'facebook'))) {
+					anyToConnect++;
+				}
+				if (isDisplayed(_gel('autoshare-service-info-' + 'twitter'))) {
+					anyConnected++;
+				}
+				if (isDisplayed(_gel('autoshare-service-add-' + 'twitter'))) {
+					anyToConnect++;
+				}
+				if (isDisplayed(_gel('autoshare-service-info-' + 'reader'))) {
+					anyConnected++;
+				}
+				if (isDisplayed(_gel('autoshare-service-add-' + 'reader'))) {
+					anyToConnect++;
+				}
+			setDisplay(_gel('autoshare-null-intro'), !anyConnected);
+			setDisplay(_gel('autoshare-active-intro'), anyConnected);
+			setDisplay(_gel('autoshare-details'), anyConnected);
+			setDisplay(_gel('autoshare-add'), anyToConnect);
+
+			squelchSpinnys();
+		}
+
+		function connectServiceWrapper(service) {
+				showDiv('autoshare-google-nag');
+				ajaxRequest('/autoshare?action_ajax_stats_ping=1&stat=connect_no_google&service=' + service,
+					{ method: "GET", onComplete: function() {} });
+		}
+
+		var autoshare = new AutoShare(
+			'session_token=0kG7Xsn6dJ438RCxtbLObIG2PWd8MA==',
+			'http://www.youtube.com/', updateServiceUi, squelchSpinnys,
+			{"twitter": {"connected_as": "-", "connected": false}, "facebook": {"connected_as": "-", "connected": false}, "reader": {"connected_as": "-", "connected": false}},
+true,
+false);
+
+			onLoadFunctionList.push(function() {
+				autoshare.processOnLoadDuties();
+			});
+	</script>
+
+
+
+	<link rel="stylesheet" href="my_videos_upload_files/www-upload-vfl107181.css">
+
+<style type="text/css">
+	#my-videos-quick-capture-button {
+		float: right;
+		padding: 1px 0;
+	}
+	.header {
+		font-size: 20px;
+		padding: 0 0 5px 0;
+		border-bottom: 1px solid #ccc;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+	.blue-box {
+		background-color: #eff4fc;
+		border: 1px solid #c6d1eb;
+		padding: 10px;
+		css-border-radius: 8px;
+		-moz-border-radius: 8px;
+		-webkit-border-radius: 8px;
+	}
+	.status {
+		font-size: 12px;
+		font-weight: bold;	
+	}
+	#beta-link {
+		margin-top: 10px;
+	}
+	#editors-home,
+	#templates-home {
+		display: none;
+	}
+	#upload-file-list {
+		padding-bottom: 0;
+	}
+	#upload-status {
+	}
+	#upload-status-nofile,
+	#upload-status-uploading {
+		display: block;
+		text-align: right;
+	}
+	#instructions {
+		background-color: #FFE89D;
+		color: #630;
+		css-border-radius: 8px;
+		-moz-border-radius: 8px;
+		-webkit-border-radius: 8px;
+		padding: 8px;
+		margin-bottom: 10px;
+	}
+	#instructions .instruction {
+		font-size: 13px;
+		line-height: 16px;
+		padding: 0px;
+		margin: 6px 4px;
+	}
+	#hd-uploading-box, 
+	#about-uploading-box,
+	#sponsored-videos-box {
+	    color: black;
+		font-size: 13px;
+		line-height: 18px;
+		margin-top: 15px;
+	}
+	#sponsored-videos-box {
+		margin-top: 20px;
+	}
+	#hd-uploading-box .title,
+    #about-uploading-box .title,
+ 	#sponsored-videos-box .title {
+		font-size: 14px;
+	}
+	#about-uploading-box .constraints {
+		padding-left: 20px;
+		margin: 8px 0;
+		list-style-type: disc;
+	}
+	#about-uploading-box .constraint {
+	}
+	#about-uploading-box .instruction {
+		margin: 0;
+	}
+	#sponsored-videos-box p {
+		margin: .3em 0;
+		width: 70%;
+	}
+	.file-items {
+	}
+	.completed-box {
+		margin: 10px 0;
+		width: 100%;
+		overflow: hidden;
+	}
+	#hd-uploading-box .logo {
+		float: left;
+		margin-right: 10px;
+	}
+	#my-videos-button {
+		float: right;
+	}
+	#my-videos-button a {
+		font-size: 14px;
+		font-weight: bold;
+	}
+	.field {
+		margin-bottom: 10px;
+	}
+	.field-header {
+		font-size: 14px;
+		font-weight: bold;
+		margin-bottom: 5px;
+	}
+	#top-row {
+		
+	}
+	#left-col {
+		float: left; 
+		width: 650px; 
+		margin: 0 10px 0 0; 
+	}
+	#right-col { 
+		float: left; 
+		width: 300px; 
+		margin: 0; 
+	}
+	#top-row {
+		width: 100%;
+		overflow: hidden;
+	}
+	#bottom-row { 
+		clear: both; 
+	}
+	.noscript-warning {
+		border-bottom: 1px solid #c6d1eb;
+		padding: 10px;
+	}
+	.file {
+		background-color: white;
+		/*border: 1px solid #c6d1eb;*/
+		border: 1px solid #999;
+		padding: 10px;
+		margin-bottom: 10px;
+	}
+	.file-form {
+		display: block;
+	}
+	.flash-browser,
+	.file-browser {
+		padding: 0px;
+	}
+	.file-form-instructions {
+		display: block;
+		padding: 5px 0;
+		font-size: 14px;
+		font-weight: bold;
+	}
+	.file-details {
+		height: 16px;
+	}
+	.file-claim-options,
+	.rev-share-options,
+	.advertising-options {
+		margin-top: 10px;
+	}
+	.rev-share-info {
+		margin-top: 10px;
+	}
+	.file-claim-title {
+		font-weight: bold;
+		vertical-align: middle;
+	}
+	.advertising-title {
+		font-size: 14px;
+		font-weight: bold;
+		vertical-align: middle;
+	}
+	#in_video_checkbox,
+	#afv_checkbox,
+	#instream_checkbox,
+	.monetize-options-checkbox {
+		display: inline-block;
+		display: -moz-inline-box;
+		margin: 0;
+		margin-right: 5px;
+		vertical-align: text-bottom;
+	}
+	.advertising-fields p {
+		margin-top: 10px;
+	}
+	.file-claim-message {
+		font-size: 12px;
+	}
+	.file-icon {
+		vertical-align: middle;
+		width: 16px;
+		height: 16px;
+		margin-right: 10px;
+		display: block;
+		float: left;
+	}
+	.file-icon .img-success-icon {
+		background: transparent url(http://s.ytimg.com/yt/img/upload-vfl56859.gif) no-repeat scroll 0 0;
+	}
+	.file-icon .img-failure-icon {
+		background: transparent url(http://s.ytimg.com/yt/img/upload-vfl56859.gif) no-repeat scroll -16px 0;
+	}
+	.file-name {
+		color: black;
+		font-size: 14px;
+		font-weight: bold;
+		display: inline-block;
+		display: -moz-inline-box;
+		margin-top: 2px;
+	}
+	.file-status {
+		float: right;
+		display: block;
+		font-size: 12px;
+		margin-top: 4px;
+		font-weight: bold;
+	}
+	.file-actions {
+		margin-top: 10px;
+	}
+	.file-video-settings-state {
+		display: none;
+	}
+	.file-progress-bar {
+		margin-top: 10px;
+		display: block;
+		border: 1px solid #999;
+		padding: 1px;
+		background-color: white;
+		color: #444;
+	}
+	.file-progress-value {
+		background-color: #14386D;
+		color: #69c;
+		display: block;
+		height: 20px;	
+		position: relative;
+		z-index: 1;
+	}
+	.file-progress-remaining {
+		position: absolute;
+		display: block;
+		width: 100%;
+		overflow: hidden;
+		white-space: nowrap;
+		font-weight: bold;
+		font-family: sans-serif;
+		padding: 3px 0 0 6px;
+	}
+	.file-messages {
+		margin-top: 10px;
+	}
+	.file-edit-video-link {
+		margin-top: 5px;
+	}
+	.file-edit-video-link,
+	.file-embed-video-link,
+	.file-share-video-link {
+		font-size: 11px;
+	}
+	.file-embed-video-link,
+	.file-share-video-link {
+		float: right;
+		margin-left: 5px;
+	}
+	.file-cancel-link,
+	.file-retry-link {
+		vertical-align: middle;
+		display: block;
+		float: right;
+		margin-top: 4px;
+		margin-left: 8px;
+	}
+	.file-error {
+		font-size: 11px;
+	}
+	.file-error b {
+		font-size: 11px;
+	}
+	.swatch {
+		padding: 2px;
+		background-color: white;
+		border: 1px solid white;
+		display: block;
+		float: left;
+		margin: 1px;
+	}
+	.swatch .primary-color {
+		padding: 1px;
+		display: inline-block;
+		display: -moz-inline-box;
+	}
+	.swatch .secondary-color {
+		width: 20px;
+		height: 20px;
+		margin-left: 20px;
+	}
+	.video-embed {
+		width: auto;
+		overflow: hidden;
+	}
+	.video-embed-preview {
+		float: left;
+		margin-left: 10px;
+	}
+	.video-embed-fields {
+		float: left;
+		width: 257px; 
+	}
+	.video-embed-color-swatches {
+		width: auto;
+		overflow: hidden;
+	}
+	.video-embed-options {
+		clear: both;
+	}
+	.video-settings-confirm {
+		margin-bottom: 10px;
+	}
+	.video-settings-editor,
+	.video-embed-editor, 
+	.video-sharing-editor {
+		margin-top: 15px;
+	}
+	.loading-message {
+		margin-bottom: 10px;
+	}
+	.error-message {
+		display: block;
+		font-weight: bold;
+		text-align: center;
+		margin: 0;
+		margin-bottom: 10px;
+		padding: 5px;
+		background-color: #ffafae;
+		css-border-radius: 8px;
+		-moz-border-radius: 8px;
+		-webkit-border-radius: 8px;
+	}
+	.upload-completion-status,
+	.uploaded-count-var {
+		font-weight: bold;
+		font-size: 14px;
+	}
+	.upload-completion-status {
+		display: inline-block;
+		display: -moz-inline-box;
+		margin-top: 4px;
+	}
+	.video-embed-canvas {
+		display: block;
+		width: 250px;
+		height: 215px;
+	}
+	.ad-block {
+		padding-bottom: 10px;
+	}
+	.file-upload-actions {
+		text-align: right;
+		margin-top: 10px;
+	}
+	.file-upload-button {
+		float: right;
+	}
+	.swfupload {
+		border: 1px solid #333;
+		background-color: #CCC;
+		float: right;
+	}
+	#uploaderapi_swf {
+		position: fixed;
+		top: 0px;
+		left: 0px;
+	}
+	.general-options-body {
+		margin-left: 20px;
+		margin-right: 10px;
+		margin-top: 5px;
+	}
+	.general-options-box {
+		padding-bottom: 10px;
+	}
+</style>
+
+	
+
+	<link rel="search" type="application/opensearchdescription+xml" href="http://www.youtube.com/opensearch?locale=en_US" title="YouTube Video Search">
+	<link rel="icon" href="http://s.ytimg.com/yt/favicon-vfl86530.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="http://s.ytimg.com/yt/favicon-vfl86530.ico" type="image/x-icon">
+
+
+		<link rel="alternate" media="handheld" href="http://m.youtube.com/my_videos_upload?desktop_uri=%2Fmy_videos_upload%3Fnobeta&amp;nobeta=">
+
+
+
+		<meta name="description" content="Share your videos with friends, family, and the world">
+
+	<meta name="keywords" content="video, sharing, camera phone, video phone, free, upload">
+
+<style></style></head><body class="en_US is-english" onload="performOnLoadFunctions();" onunload="performOnUnloadFunctions();">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="masthead-container">
+	<div id="masthead">
+				<a href="http://www.youtube.com/" onmousedown="urchinTracker('/Events/Header_4/YouTubeLogo');">
+			<button id="logo" class="master-sprite" title="" onclick="window.top.location.href='/'; return false;"></button>
+		</a>
+	<div id="masthead-main">
+		<div id="masthead-search">
+			
+	<form autocomplete="off" class="search-form" action="/results" method="get" name="searchForm">
+		<input autocomplete="off" id="masthead-search-term" class="search-term" name="search_query" tabindex="1" onkeyup="top.goog.i18n.bidi.setDirAttribute(event,this)" value="" maxlength="128" onfocus="addClass(this, 'search-term-focus')" onblur="removeClass(this, 'search-term-focus')" type="text">
+			<input id="search-type-masthead" name="search_type" value="" type="hidden">
+	<a class="yt-button yt-button-primary" id="" style="" href="#" onclick="document.searchForm.submit(); return false;"><span>Search</span></a>
+
+	<input value="f" name="aq" type="hidden"><input disabled="disabled" value="" name="oq" type="hidden"></form>
+
+		</div>
+		<div id="masthead-nav-main">
+			<a href="http://www.youtube.com/" onmousedown="urchinTracker('/Events/Header_4/MainNav/Home');">Home</a>
+			
+				<a href="http://www.youtube.com/browse" onmousedown="urchinTracker('/Events/Header_4/MainNav/Videos');">Videos</a>
+			
+			<a href="http://www.youtube.com/members" onmousedown="urchinTracker('/Events/Header_4/MainNav/Channels');">Channels</a>
+			
+		</div>
+	</div>
+	<div id="masthead-user">
+		<div id="masthead-utility">
+					<span class="utility-item">
+						<span class="yt-menulink yt-menulink-primary" id="" style="" onmouseenter="this.className += ' yt-menulink-primary-hover';" onmouseleave="this.className = this.className.replace(' yt-menulink-primary-hover', '');"><a class="yt-menulink-btn yt-button yt-button-primary" href="http://www.youtube.com/user/amigojapan" onclick="urchinTracker('/Events/Header_4/UtilLinks/Username');">amigojapan</a><a class="yt-menulink-arr" href="http://www.youtube.com/user/amigojapan" onclick="urchinTracker('/Events/Header_4/UtilLinks/Username');"></a><ul class="yt-menulink-menu"><li><a href="http://www.youtube.com/my_account" onclick="urchinTracker('/Events/Header_4/UtilLinks/Account');">Account</a></li><li><a href="http://www.youtube.com/my_videos" onclick="urchinTracker('/Events/Header_4/UtilLinks/MyVideos');">My Videos</a></li><li><a href="http://www.youtube.com/my_favorites" onclick="urchinTracker('/Events/Header_4/UtilLinks/Favorites');">Favorites</a></li><li><a href="http://www.youtube.com/my_playlists" onclick="urchinTracker('/Events/Header_4/UtilLinks/Playlists');">Playlists</a></li><li><a href="http://www.youtube.com/inbox?folder=messages&amp;action_message=1" onclick="urchinTracker('/Events/Header_4/UtilLinks/Inbox');">Inbox</a></li></ul>  </span>
+					</span>
+					<span class="utility-item" onmousedown="urchinTracker('/Events/Header_4/UtilLinks/SignOut');">
+						<a href="#" onclick="document.logoutForm.submit(); return false;">Sign Out</a>
+					</span>
+		</div>
+		<div id="masthead-nav-user">
+			<a href="http://www.youtube.com/watch_queue?all" id="quicklist-nav" style="display: none;" onmousedown="urchinTracker('/Events/Header_4/UserNav/QuickList');">QuickList (<span id="quicklist-nav-count">0</span>)</a>
+			<a href="http://www.youtube.com/my_subscriptions?masthead=1" onmousedown="urchinTracker('/Events/Header_4/UserNav/Subscriptions');">Subscriptions</a>
+			<a href="http://www.youtube.com/my_history" onmousedown="urchinTracker('/Events/Header_4/UserNav/History');">History</a>
+			<a href="http://www.youtube.com/my_videos_upload" onmousedown="urchinTracker('/Events/Header_4/UserNav/Upload');">Upload</a>
+		</div>
+	</div>
+	<div id="masthead-end"></div>
+
+	</div>
+</div>
+<form name="logoutForm" method="post" target="_top" action="/index">
+	<input name="action_logout" value="1" type="hidden">
+<input value="09HK4XByEiErT5qCxICzWFWTp798MTI1MDUzNDA1Nw==" name="session_token" type="hidden"></form>
+
+<div id="baseDiv" class="date-20090816 video-info">
+
+
+	
+
+	
+
+	
+
+
+
+<script type="text/javascript" src="my_videos_upload_files/ga.js"></script>
+
+
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3482161-1");
+pageTracker._initData();
+function urchinTracker (a) {pageTracker._trackPageview(a);}
+</script>
+
+<script type="text/javascript">
+var page = "" + "/Upload" + "/" + "Upload 1";
+pageTracker._trackPageview(page);
+</script>
+
+
+
+<div id="upload-page">
+	<div id="my-videos-quick-capture-button">
+		<a class="yt-button" id="" style="" href="http://www.youtube.com/my_webcam" onclick=""><span>Record from Webcam</span></a>
+		<a class="yt-button" id="" style="" href="http://www.youtube.com/my_videos_mobile_upload" onclick=""><span>Upload from Mobile</span></a>
+	</div>
+	<h1 class="header">
+		Video File Upload
+	</h1>
+	<div id="top-row">
+		<div id="left-col">
+			<div id="upload-file-list" class="blue-box">
+				<div id="upload-file-box">
+					<form style="display: none;">
+						<input class="session-id" name="session_id" value="u1bYjwk5Z8FY1250447657.8" type="hidden">
+					</form>
+					<div style="display: none;" class="loading-message">Loading...</div>
+					<div class="file-items">
+						<noscript>
+							<div class="noscript-warning">
+								You need Javascript enabled to upload a video.	
+							</div>
+						</noscript>
+					<div id="file-0" class="file">
+	<div class="display-states">
+		<div class="html-initial-state" style="display: none;">
+					<form class="file-form" enctype="multipart/form-data" method="post" action="http://upload.youtube.com/my_videos_post">
+				<input name="uploader_type" value="Web_HTML" type="hidden">	
+				<input name="return_address" value="www.youtube.com" type="hidden">
+				<input name="upload_key" value="F046D9721B1617FE-6501BA247D8C0DCF" type="hidden">
+				<input name="action_postvideo" value="1" type="hidden">
+				<div>
+					<span class="file-form-instructions">Select a video to upload.</span>
+				</div>
+				<div class="file-upload-fields">
+					<input class="file-upload-button" name="upload-video-button" value="Upload Video" type="button">
+					<input class="file-browser" name="field_uploadfile" type="file">
+
+				</div>
+
+			<input value="09HK4XByEiErT5qCxICzWFWTp798MTI1MDUzNDA1Nw==" name="session_token" type="hidden"></form>
+		</div>
+		<div class="flash-initial-state" style="overflow: hidden; display: none;">
+			<form class="flash-form" style="display: none;">
+				<input name="uploader_type" value="Web_Flash" type="hidden">
+				<input name="return_address" value="www.youtube.com" type="hidden">
+				<input name="json_reply" value="1" type="hidden">
+				<input name="action_postvideo" value="1" type="hidden">
+				<input name="ismultiflash" value="1" type="hidden">
+				<input name="upload_key" value="F046D9721B1617FE-6501BA247D8C0DCF" type="hidden">
+			</form>
+			<input class="flash-upload-button" value="Upload Video" style="float: right;" type="button">
+					<span class="file-form-instructions">Press "Upload Video" to select and upload a video file.</span>
+		</div>
+		<div class="queued-state" style="display: none;">
+			<div class="file-details">
+				<a class="file-cancel-link eLink" href="http://www.youtube.com/my_videos_upload?error=cancel">Cancel</a>
+				<span class="file-status">Queued</span>
+				<span class="file-name">screencast.avi</span>
+			</div>
+			<div class="file-actions">
+				<a class="file-edit-video-link eLink" href="http://www.youtube.com/my_videos_upload?error=editmd">Add Video Name and Description, and Edit Privacy Settings</a>
+			</div>
+		</div>
+		<div class="uploading-state" style="display: none;">
+			<div class="file-details">
+				<a class="file-cancel-link eLink" href="http://www.youtube.com/my_videos_upload?error=cancel">Cancel</a>
+				<span class="file-status">Uploading</span>
+				<span class="file-icon"><img src="my_videos_upload_files/loader-vfl35975.gif"></span>
+				<span class="file-name">screencast.avi</span>
+			</div>
+			<div class="file-progress-bar" style="display: none;">
+				<span class="file-progress-remaining" style="display: none;"><span class="file-progress-bytes"></span> of <span class="file-progress-bytes-total"></span> - <span class="file-progress-time-remaining"></span> remaining</span>
+				<div class="file-progress-value" style="width: 0%;"><span class="file-progress-remaining" style="display: none;"><span class="file-progress-bytes"></span> of <span class="file-progress-bytes-total"></span> - <span class="file-progress-time-remaining"></span> remaining</span></div>
+			</div>
+			<div class="file-actions">
+				<a class="file-edit-video-link eLink" href="http://www.youtube.com/my_videos_upload?error=editmd">Add Video Name and Description, and Edit Privacy Settings</a>
+			</div>
+		</div>
+		<div class="success-state" style="display: block;">
+			<div class="file-details">
+				<span class="file-status">Success</span>
+				<span class="file-icon"><img class="img-success-icon" src="my_videos_upload_files/none-vfl36657.gif" alt="" width="16" height="16"></span>
+				<span class="file-name">screencast.avi</span>
+			</div>
+			<div class="file-actions">
+				<a class="file-share-video-link eLink" href="http://www.youtube.com/my_videos_upload?error=embed">Embed and Sharing Options</a>
+				<a class="file-edit-video-link eLink" href="http://www.youtube.com/my_videos_upload?error=editmd">Add Video Name and Description, and Edit Privacy Settings</a>
+			</div>
+		</div>
+		<div class="cancelled-state" style="display: none;">
+			<div class="file-details">
+				<a class="file-retry-link eLink" href="http://www.youtube.com/my_videos_upload?error=retry">Retry</a>
+				<span class="file-status">Cancelled</span>
+				<span class="file-icon"><img class="img-failure-icon" src="my_videos_upload_files/none-vfl36657.gif" alt="" width="16" height="16"></span>
+				<span class="file-name">screencast.avi</span>
+			</div>
+		</div>
+		<div class="error-state" style="display: none;">
+			<div class="file-details">
+				<a class="file-retry-link eLink" href="http://www.youtube.com/my_videos_upload?error=retry">Retry</a>
+				<span class="file-status">Error</span>
+				<span class="file-icon"><img class="img-failure-icon" src="my_videos_upload_files/none-vfl36657.gif" alt="" width="16" height="16"></span>
+				<span class="file-name">screencast.avi</span>
+			</div>
+		</div>
+		<div class="file-messages" style="">
+			<span class="file-message-upload-cancelled yt-message-error" style="display: none;"><b>Upload Failed:</b> User cancelled the upload.</span>
+			<span class="file-message-upload-failed yt-message-error" style="display: none;"><b>Upload Failed:</b> An unknown error occurred.</span>
+			<span class="file-message-upload-too-large yt-message-error" style="display: none;"><b>Upload Too Large:</b> The file you are uploading is too large.</span>
+			<span class="file-message-settings-saved yt-message-success" style="display: none;"><b>Pending:</b> Your video settings will be saved once your video has finished uploading.</span>
+			<span class="file-message-settings-posting yt-message-success" style="display: none;"><b>Saving:</b> Saving your video settings. <img src="my_videos_upload_files/loader-vfl35975.gif" style="vertical-align: middle;" width="16" height="16"></span> 
+			<span class="file-message-settings-posted yt-message-success" style=""><b>Success:</b> Your video settings have been successfully saved.</span>
+			<span class="file-message-settings-error yt-message-error" style="display: none;"><b>Error:</b> An error occurred trying to save your settings.</span>
+			<span class="file-message-settings-error-ro yt-message-error" style="display: none;"><b>Error:</b> We are currently performing site maintenance and are unable to save your settings. You can edit them later using My Videos.</span>
+			<span class="file-message-upload-retry yt-message-success" style="display: none;"><b>Upload Queued:</b> Your upload will be retried after the remaining videos have completed uploading.</span> 
+		</div>
+	</div>
+	<div class="video-settings-editor" style="display: none;">
+		<div class="yt-narrative-box">
+			<span class="yt-tail" style="margin-left: 40px;"></span>
+			<form class="video-settings-form" action="http://www.youtube.com/my_videos_upload_json">
+				<input name="session_token" value="mMP3h6tXLSgauln6l6647Q8wjxZ8MA==" type="hidden">
+				<input name="action_edit_video" value="1" type="hidden">
+				<input class="video-settings-updated-flag" name="updated_flag" value="1" type="hidden">
+				<input class="video-settings-id" name="video_id" value="qn31fRm1SOk" type="hidden">
+				<div class="video-settings-messages">
+				</div>
+				<div class="field">
+					<p class="field-header">Title</p>
+					<input value="Be Osama, Terrorism Strategy Game (open Source)" class="video-settings-title textbox" name="title" type="text">
+				</div>
+				<div class="field">
+					<p class="field-header">Description</p>
+					<textarea class="video-settings-description" name="description" rows="5">To play go to http://www.yoyogames.com/games/show/92441
+Warning: This game is intended as a joke. I don't endorse terrorism
+and don't intend to offend Americans or Islamic people.
+In this game you are Osama Bin Laden
+Your goal is to terrorize the entire world.
+It works on windows, linux with wine and probably other platforms with wine</textarea>
+				</div>
+				<div class="field">
+					<p class="field-header">Tags</p>
+					<input class="video-settings-tags textbox" name="keywords" value="Be Osama Bin Laden free game games windows linux open source" type="text">
+				</div>
+				<div class="field">
+					<p class="field-header">Category</p>
+					<select class="video-settings-category" name="category">
+						<option value="">Please select a category:</option>
+							<option value="2">Autos &amp; Vehicles</option>
+							<option value="23">Comedy</option>
+							<option value="27">Education</option>
+							<option value="24">Entertainment</option>
+							<option value="1">Film &amp; Animation</option>
+							<option selected="selected" value="20">Gaming</option>
+							<option value="26">Howto &amp; Style</option>
+							<option value="10">Music</option>
+							<option value="25">News &amp; Politics</option>
+							<option value="29">Nonprofits &amp; Activism</option>
+							<option value="22">People &amp; Blogs</option>
+							<option value="15">Pets &amp; Animals</option>
+							<option value="28">Science &amp; Technology</option>
+							<option value="17">Sports</option>
+							<option value="19">Travel &amp; Events</option>
+					</select>
+				</div>
+				<div class="field">
+					<p class="field-header">Privacy</p>
+					<ul class="option-list video-settings-privacy">
+						<li class="option"><input class="video-settings-privacy-public radio" name="privacy" value="public" checked="checked" type="radio"><label for="video-settings-privacy-public">Share your video with the world (Recommended)</label></li>
+						<li class="option"><input class="video-settings-privacy-private radio" name="privacy" value="private" type="radio"><label for="video-settings-privacy-private">Private (Viewable by you and up to 25 people)</label></li>
+					</ul>
+				</div>
+				<div class="video-settings-confirm">
+					<span class="video-settings-save-button">
+						<a class="yt-button yt-button-primary" id="" style="" href="http://www.youtube.com/my_videos_upload?error=savemd" onclick=""><span>Save Changes</span></a>
+					</span>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="video-sharing-editor" style="display: block;">
+		<div class="yt-narrative-box">
+			<span class="yt-tail-right" style="margin-right: 35px;">&nbsp;</span>
+			<form>
+				<div class="field">
+					<p class="field-header">URL</p>
+					<input class="video-sharing-url textbox" value="" onclick="this.select();" readonly="readonly" type="text">
+				</div>
+				<div class="field">
+                    			<p class="field-header">Embed</p>
+					<input class="video-embed-url textbox" value="" onclick="this.select();" readonly="readonly" type="text">
+				</div>
+			</form>
+			<form class="video-embed" style="display: none;">
+				<div class="video-embed-fields">
+					<div class="field">
+						<p class="field-header">Embed Code</p>
+						<input class="video-embed-code textbox" value="" readonly="readonly" type="text">
+					</div>
+					<div class="field">
+						<p class="field-header">Color</p>
+						<div class="video-embed-color-swatches">
+							<a href="#" class="swatch" style="border-color: black;"><span class="primary-color" style="background-color: rgb(177, 177, 177);"><img class="secondary-color" src="my_videos_upload_files/pixel-vfl73.gif" style="background-color: rgb(207, 207, 207);"></span></a>
+							<a href="#" class="swatch"><span class="primary-color" style="background-color: rgb(58, 58, 58);"><img class="secondary-color" src="my_videos_upload_files/pixel-vfl73.gif" style="background-color: rgb(153, 153, 153);"></span></a>
+							<a href="#" class="swatch"><span class="primary-color" style="background-color: rgb(43, 64, 91);"><img class="secondary-color" src="my_videos_upload_files/pixel-vfl73.gif" style="background-color: rgb(107, 138, 182);"></span></a>
+							<a href="#" class="swatch"><span class="primary-color" style="background-color: rgb(0, 102, 153);"><img class="secondary-color" src="my_videos_upload_files/pixel-vfl73.gif" style="background-color: rgb(84, 171, 214);"></span></a>
+							<a href="#" class="swatch"><span class="primary-color" style="background-color: rgb(35, 73, 0);"><img class="secondary-color" src="my_videos_upload_files/pixel-vfl73.gif" style="background-color: rgb(78, 158, 0);"></span></a>
+							<a href="#" class="swatch"><span class="primary-color" style="background-color: rgb(225, 96, 15);"><img class="secondary-color" src="my_videos_upload_files/pixel-vfl73.gif" style="background-color: rgb(254, 219, 1);"></span></a>
+							<a href="#" class="swatch"><span class="primary-color" style="background-color: rgb(204, 37, 80);"><img class="secondary-color" src="my_videos_upload_files/pixel-vfl73.gif" style="background-color: rgb(232, 122, 159);"></span></a>
+							<a href="#" class="swatch"><span class="primary-color" style="background-color: rgb(64, 32, 97);"><img class="secondary-color" src="my_videos_upload_files/pixel-vfl73.gif" style="background-color: rgb(148, 97, 202);"></span></a>
+							<a href="#" class="swatch"><span class="primary-color" style="background-color: rgb(93, 23, 25);"><img class="secondary-color" src="my_videos_upload_files/pixel-vfl73.gif" style="background-color: rgb(205, 49, 27);"></span></a>
+							<a href="#" class="swatch"><span class="primary-color" style="background-color: rgb(0, 0, 0);"><img class="secondary-color" src="my_videos_upload_files/pixel-vfl73.gif" style="background-color: rgb(51, 51, 51);"></span></a>
+						</div>
+					</div>
+					<div class="video-embed-options">
+						<ul class="option-list">
+							<li class="option"><input id="video-embed-show-border" class="video-embed-show-border checkbox" name="showborder" checked="checked" type="checkbox"><label for="video-embed-show-border">Show border</label></li>
+							<li class="option"><input id="video-embed-allow-embed" class="video-embed-allow-embed checkbox" name="allowembed" type="checkbox"><label for="video-embed-allow-embed">Allow others to embed this video</label></li>
+						</ul>
+					</div>
+				</div>
+				<div class="video-embed-preview">
+					<div class="video-embed-canvas"></div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div><div id="file-1" class="file">
+	<div class="display-states">
+		<div class="html-initial-state" style="">
+					<form class="file-form" enctype="multipart/form-data" method="post" action="http://upload.youtube.com/my_videos_post">
+				<input name="uploader_type" value="Web_HTML" type="hidden">	
+				<input name="return_address" value="www.youtube.com" type="hidden">
+				<input name="upload_key" value="F046D9721B1617FE-6501BA247D8C0DCF" type="hidden">
+				<input name="action_postvideo" value="1" type="hidden">
+				<div>
+					<span class="file-form-instructions">Select a video to upload.</span>
+				</div>
+				<div class="file-upload-fields">
+					<input class="file-upload-button" name="upload-video-button" value="Upload Video" disabled="disabled" type="button">
+					<input class="file-browser" name="field_uploadfile" type="file">
+
+				</div>
+
+			<input value="09HK4XByEiErT5qCxICzWFWTp798MTI1MDUzNDA1Nw==" name="session_token" type="hidden"></form>
+		</div>
+		<div class="flash-initial-state" style="overflow: hidden; display: none;">
+			<form class="flash-form" style="display: none;">
+				<input name="uploader_type" value="Web_Flash" type="hidden">
+				<input name="return_address" value="www.youtube.com" type="hidden">
+				<input name="json_reply" value="1" type="hidden">
+				<input name="action_postvideo" value="1" type="hidden">
+				<input name="ismultiflash" value="1" type="hidden">
+				<input name="upload_key" value="F046D9721B1617FE-6501BA247D8C0DCF" type="hidden">
+			</form>
+			<input class="flash-upload-button" value="Upload Video" style="float: right;" type="button">
+					<span class="file-form-instructions">Press "Upload Video" to select and upload another video file.</span>
+		</div>
+		<div class="queued-state" style="display: none;">
+			<div class="file-details">
+				<a class="file-cancel-link eLink" href="http://www.youtube.com/my_videos_upload?error=cancel">Cancel</a>
+				<span class="file-status">Queued</span>
+				<span class="file-name"></span>
+			</div>
+			<div class="file-actions">
+				<a class="file-edit-video-link eLink" href="http://www.youtube.com/my_videos_upload?error=editmd">Add Video Name and Description, and Edit Privacy Settings</a>
+			</div>
+		</div>
+		<div class="uploading-state" style="display: none;">
+			<div class="file-details">
+				<a class="file-cancel-link eLink" href="http://www.youtube.com/my_videos_upload?error=cancel">Cancel</a>
+				<span class="file-status">Uploading</span>
+				<span class="file-icon"><img src="my_videos_upload_files/loader-vfl35975.gif"></span>
+				<span class="file-name"></span>
+			</div>
+			<div class="file-progress-bar" style="display: none;">
+				<span class="file-progress-remaining" style="display: none;"><span class="file-progress-bytes"></span> of <span class="file-progress-bytes-total"></span> - <span class="file-progress-time-remaining"></span> remaining</span>
+				<div class="file-progress-value" style="width: 0%;"><span class="file-progress-remaining" style="display: none;"><span class="file-progress-bytes"></span> of <span class="file-progress-bytes-total"></span> - <span class="file-progress-time-remaining"></span> remaining</span></div>
+			</div>
+			<div class="file-actions">
+				<a class="file-edit-video-link eLink" href="http://www.youtube.com/my_videos_upload?error=editmd">Add Video Name and Description, and Edit Privacy Settings</a>
+			</div>
+		</div>
+		<div class="success-state" style="display: none;">
+			<div class="file-details">
+				<span class="file-status">Success</span>
+				<span class="file-icon"><img class="img-success-icon" src="my_videos_upload_files/none-vfl36657.gif" alt="" width="16" height="16"></span>
+				<span class="file-name"></span>
+			</div>
+			<div class="file-actions">
+				<a class="file-share-video-link eLink" href="http://www.youtube.com/my_videos_upload?error=embed">Embed and Sharing Options</a>
+				<a class="file-edit-video-link eLink" href="http://www.youtube.com/my_videos_upload?error=editmd">Add Video Name and Description, and Edit Privacy Settings</a>
+			</div>
+		</div>
+		<div class="cancelled-state" style="display: none;">
+			<div class="file-details">
+				<a class="file-retry-link eLink" href="http://www.youtube.com/my_videos_upload?error=retry">Retry</a>
+				<span class="file-status">Cancelled</span>
+				<span class="file-icon"><img class="img-failure-icon" src="my_videos_upload_files/none-vfl36657.gif" alt="" width="16" height="16"></span>
+				<span class="file-name"></span>
+			</div>
+		</div>
+		<div class="error-state" style="display: none;">
+			<div class="file-details">
+				<a class="file-retry-link eLink" href="http://www.youtube.com/my_videos_upload?error=retry">Retry</a>
+				<span class="file-status">Error</span>
+				<span class="file-icon"><img class="img-failure-icon" src="my_videos_upload_files/none-vfl36657.gif" alt="" width="16" height="16"></span>
+				<span class="file-name"></span>
+			</div>
+		</div>
+		<div class="file-messages" style="display: none;">
+			<span class="file-message-upload-cancelled yt-message-error" style="display: none;"><b>Upload Failed:</b> User cancelled the upload.</span>
+			<span class="file-message-upload-failed yt-message-error" style="display: none;"><b>Upload Failed:</b> An unknown error occurred.</span>
+			<span class="file-message-upload-too-large yt-message-error" style="display: none;"><b>Upload Too Large:</b> The file you are uploading is too large.</span>
+			<span class="file-message-settings-saved yt-message-success" style="display: none;"><b>Pending:</b> Your video settings will be saved once your video has finished uploading.</span>
+			<span class="file-message-settings-posting yt-message-success" style="display: none;"><b>Saving:</b> Saving your video settings. <img src="my_videos_upload_files/loader-vfl35975.gif" style="vertical-align: middle;" width="16" height="16"></span> 
+			<span class="file-message-settings-posted yt-message-success" style="display: none;"><b>Success:</b> Your video settings have been successfully saved.</span>
+			<span class="file-message-settings-error yt-message-error" style="display: none;"><b>Error:</b> An error occurred trying to save your settings.</span>
+			<span class="file-message-settings-error-ro yt-message-error" style="display: none;"><b>Error:</b> We are currently performing site maintenance and are unable to save your settings. You can edit them later using My Videos.</span>
+			<span class="file-message-upload-retry yt-message-success" style="display: none;"><b>Upload Queued:</b> Your upload will be retried after the remaining videos have completed uploading.</span> 
+		</div>
+	</div>
+	<div class="video-settings-editor" style="display: none;">
+		<div class="yt-narrative-box">
+			<span class="yt-tail" style="margin-left: 40px;"></span>
+			<form class="video-settings-form" action="http://www.youtube.com/my_videos_upload_json">
+				<input name="session_token" value="mMP3h6tXLSgauln6l6647Q8wjxZ8MA==" type="hidden">
+				<input name="action_edit_video" value="1" type="hidden">
+				<input class="video-settings-updated-flag" name="updated_flag" value="0" type="hidden">
+				<input class="video-settings-id" name="video_id" value="" type="hidden">
+				<div class="video-settings-messages">
+				</div>
+				<div class="field">
+					<p class="field-header">Title</p>
+					<input class="video-settings-title textbox" name="title" type="text">
+				</div>
+				<div class="field">
+					<p class="field-header">Description</p>
+					<textarea class="video-settings-description" name="description" rows="5"></textarea>
+				</div>
+				<div class="field">
+					<p class="field-header">Tags</p>
+					<input class="video-settings-tags textbox" name="keywords" value="" type="text">
+				</div>
+				<div class="field">
+					<p class="field-header">Category</p>
+					<select class="video-settings-category" name="category">
+						<option value="" selected="selected">Please select a category:</option>
+							<option value="2">Autos &amp; Vehicles</option>
+							<option value="23">Comedy</option>
+							<option value="27">Education</option>
+							<option value="24">Entertainment</option>
+							<option value="1">Film &amp; Animation</option>
+							<option value="20">Gaming</option>
+							<option value="26">Howto &amp; Style</option>
+							<option value="10">Music</option>
+							<option value="25">News &amp; Politics</option>
+							<option value="29">Nonprofits &amp; Activism</option>
+							<option value="22">People &amp; Blogs</option>
+							<option value="15">Pets &amp; Animals</option>
+							<option value="28">Science &amp; Technology</option>
+							<option value="17">Sports</option>
+							<option value="19">Travel &amp; Events</option>
+					</select>
+				</div>
+				<div class="field">
+					<p class="field-header">Privacy</p>
+					<ul class="option-list video-settings-privacy">
+						<li class="option"><input class="video-settings-privacy-public radio" name="privacy" value="public" checked="checked" type="radio"><label for="video-settings-privacy-public">Share your video with the world (Recommended)</label></li>
+						<li class="option"><input class="video-settings-privacy-private radio" name="privacy" value="private" type="radio"><label for="video-settings-privacy-private">Private (Viewable by you and up to 25 people)</label></li>
+					</ul>
+				</div>
+				<div class="video-settings-confirm">
+					<span class="video-settings-save-button">
+						<a class="yt-button yt-button-primary" id="" style="" href="http://www.youtube.com/my_videos_upload?error=savemd" onclick=""><span>Save Changes</span></a>
+					</span>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="video-sharing-editor" style="display: none;">
+		<div class="yt-narrative-box">
+			<span class="yt-tail-right" style="margin-right: 35px;">&nbsp;</span>
+			<form>
+				<div class="field">
+					<p class="field-header">URL</p>
+					<input class="video-sharing-url textbox" value="" onclick="this.select();" readonly="readonly" type="text">
+				</div>
+				<div class="field">
+                    			<p class="field-header">Embed</p>
+					<input class="video-embed-url textbox" value="" onclick="this.select();" readonly="readonly" type="text">
+				</div>
+			</form>
+			<form class="video-embed" style="display: none;">
+				<div class="video-embed-fields">
+					<div class="field">
+						<p class="field-header">Embed Code</p>
+						<input class="video-embed-code textbox" value="" readonly="readonly" type="text">
+					</div>
+					<div class="field">
+						<p class="field-header">Color</p>
+						<div class="video-embed-color-swatches">
+							<a href="#" class="swatch" style="border-color: black;"><span class="primary-color" style="background-color: rgb(177, 177, 177);"><img class="secondary-color" src="my_videos_upload_files/pixel-vfl73.gif" style="background-color: rgb(207, 207, 207);"></span></a>
+							<a href="#" class="swatch"><span class="primary-color" style="background-color: rgb(58, 58, 58);"><img class="secondary-color" src="my_videos_upload_files/pixel-vfl73.gif" style="background-color: rgb(153, 153, 153);"></span></a>
+							<a href="#" class="swatch"><span class="primary-color" style="background-color: rgb(43, 64, 91);"><img class="secondary-color" src="my_videos_upload_files/pixel-vfl73.gif" style="background-color: rgb(107, 138, 182);"></span></a>
+							<a href="#" class="swatch"><span class="primary-color" style="background-color: rgb(0, 102, 153);"><img class="secondary-color" src="my_videos_upload_files/pixel-vfl73.gif" style="background-color: rgb(84, 171, 214);"></span></a>
+							<a href="#" class="swatch"><span class="primary-color" style="background-color: rgb(35, 73, 0);"><img class="secondary-color" src="my_videos_upload_files/pixel-vfl73.gif" style="background-color: rgb(78, 158, 0);"></span></a>
+							<a href="#" class="swatch"><span class="primary-color" style="background-color: rgb(225, 96, 15);"><img class="secondary-color" src="my_videos_upload_files/pixel-vfl73.gif" style="background-color: rgb(254, 219, 1);"></span></a>
+							<a href="#" class="swatch"><span class="primary-color" style="background-color: rgb(204, 37, 80);"><img class="secondary-color" src="my_videos_upload_files/pixel-vfl73.gif" style="background-color: rgb(232, 122, 159);"></span></a>
+							<a href="#" class="swatch"><span class="primary-color" style="background-color: rgb(64, 32, 97);"><img class="secondary-color" src="my_videos_upload_files/pixel-vfl73.gif" style="background-color: rgb(148, 97, 202);"></span></a>
+							<a href="#" class="swatch"><span class="primary-color" style="background-color: rgb(93, 23, 25);"><img class="secondary-color" src="my_videos_upload_files/pixel-vfl73.gif" style="background-color: rgb(205, 49, 27);"></span></a>
+							<a href="#" class="swatch"><span class="primary-color" style="background-color: rgb(0, 0, 0);"><img class="secondary-color" src="my_videos_upload_files/pixel-vfl73.gif" style="background-color: rgb(51, 51, 51);"></span></a>
+						</div>
+					</div>
+					<div class="video-embed-options">
+						<ul class="option-list">
+							<li class="option"><input id="video-embed-show-border" class="video-embed-show-border checkbox" name="showborder" checked="checked" type="checkbox"><label for="video-embed-show-border">Show border</label></li>
+							<li class="option"><input id="video-embed-allow-embed" class="video-embed-allow-embed checkbox" name="allowembed" type="checkbox"><label for="video-embed-allow-embed">Allow others to embed this video</label></li>
+						</ul>
+					</div>
+				</div>
+				<div class="video-embed-preview">
+					<div class="video-embed-canvas"></div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div></div>
+					<div class="completed-box" style="">
+						<div id="my-videos-button">
+							<a href="http://www.youtube.com/my_videos">Go to My Videos</a>
+						</div>
+						<span class="upload-completion-status">Total videos uploaded: <span class="uploaded-count-var">1</span></span>
+					</div>
+					<div class="general-options-box" style="">
+						<div class="yt-uix-expander expander-small" style="border-top: medium none;">
+							<h4 class="yt-uix-expander-head">
+								<button title="" class="yt-uix-expander-arrow master-sprite"></button>
+								AutoShare Options
+								<img src="my_videos_upload_files/pic_new_sml_27x13-vfl14287.gif">
+							</h4>
+							<div class="yt-uix-expander-body general-options-body">
+										<div id="autoshare-upgrade" class="autoshare-nag-box hid" style="margin-bottom: 10px;">
+			<table width="100%"><tbody><tr>
+			<td>You
+are currently only AutoSharing uploads, but we can now AutoShare all of
+your actions (favorites, uploads, subscriptions, etc.) based on your
+Activity Feed settings. Would you like to upgrade?</td>
+			<td><a class="yt-button" id="" style="" href="#" onclick="autoshare.upgradeToAllActions(); return false;"><span>Upgrade</span></a></td>
+			</tr></tbody></table>
+		</div>
+	<div id="autoshare-null-intro" class="autoshare-intro" style="">
+		<div>
+			<div style="display: none;" id="autoshare-intro-upload" class="hid">Connect accounts and automatically post your uploads to these popular services and websites.</div>
+			<div id="autoshare-intro-all" class="">Want
+to automatically share your activity feed (your uploads, favorites,
+ratings, etc.) to your profile on other websites? Choose a site to get
+started:</div>
+		</div>
+	</div>
+	<div style="display: none;" id="autoshare-active-intro" class="autoshare-intro hid">
+		<div class="hid" style="display: none;" id="autoshare-desc-upload">Your uploads will be automatically posted to the following services:</div>
+		<div class="" id="autoshare-desc-all">Want
+to automatically share your activity feed (your uploads, favorites,
+ratings, etc.) to your profile on other websites? Choose a site to get
+started:</div>
+	</div>
+	<div style="display: none;" class="hid" id="autoshare-details">
+			<div style="display: none;" id="autoshare-service-detail-facebook" class="autoshare-service-detail hid">
+				<div class="autoshare-service-detail">
+						<div style="display: inline;">
+		<div class="autoshare-service-icon">
+			<img class="img-autoshare-facebook" src="my_videos_upload_files/none-vfl36657.gif" alt="" width="16" height="16">
+		</div>
+		<span class="autoshare-service-name">Facebook</span>
+	</div>
+
+					<span id="autoshare-service-disconnect-facebook" style="padding-left: 10px;">Connected as <b><span class="hid" style="display: none;" id="autoshare-service-info-facebook">-</span></b> <a class="autoshare-disconnect-link eLink" href="javascript:;" onclick="autoshare.disconnectService('facebook'); showDiv('autoshare-service-disconnect-spinny-facebook'); return false;">Disconnect Accounts</a></span>
+					<span id="autoshare-service-disconnect-spinny-facebook" class="autoshare-spinny hid" style="padding-left: 10px; display: none;">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				</div>
+			</div>
+			<div style="display: none;" id="autoshare-service-detail-twitter" class="autoshare-service-detail hid">
+				<div class="autoshare-service-detail">
+						<div style="display: inline;">
+		<div class="autoshare-service-icon">
+			<img class="img-autoshare-twitter" src="my_videos_upload_files/none-vfl36657.gif" alt="" width="16" height="16">
+		</div>
+		<span class="autoshare-service-name">Twitter</span>
+	</div>
+
+					<span id="autoshare-service-disconnect-twitter" style="padding-left: 10px;">Connected as <b><span class="hid" style="display: none;" id="autoshare-service-info-twitter">-</span></b> <a class="autoshare-disconnect-link eLink" href="javascript:;" onclick="autoshare.disconnectService('twitter'); showDiv('autoshare-service-disconnect-spinny-twitter'); return false;">Disconnect Accounts</a></span>
+					<span id="autoshare-service-disconnect-spinny-twitter" class="autoshare-spinny hid" style="padding-left: 10px; display: none;">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				</div>
+			</div>
+			<div style="display: none;" id="autoshare-service-detail-reader" class="autoshare-service-detail hid">
+				<div class="autoshare-service-detail">
+						<div style="display: inline;">
+		<div class="autoshare-service-icon">
+			<img class="img-autoshare-reader" src="my_videos_upload_files/none-vfl36657.gif" alt="" width="16" height="16">
+		</div>
+		<span class="autoshare-service-name">Google Reader</span>
+	</div>
+
+					<span id="autoshare-service-disconnect-reader" style="padding-left: 10px;">Connected as <b><span class="hid" style="display: none;" id="autoshare-service-info-reader">-</span></b> <a class="autoshare-disconnect-link eLink" href="javascript:;" onclick="autoshare.disconnectService('reader'); showDiv('autoshare-service-disconnect-spinny-reader'); return false;">Disconnect Accounts</a></span>
+					<span id="autoshare-service-disconnect-spinny-reader" class="autoshare-spinny hid" style="padding-left: 10px; display: none;">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				</div>
+			</div>
+
+		<div class="hid" style="display: none;" id="autoshare-help-upload">
+			<a id="autoshare-upload-help-link" class="eLink" href="#" onclick="toggleDisplay('autoshare-upload-help'); toggleDisplay('autoshare-upload-help-link'); return false;">When will uploads be posted?</a>
+			<div id="autoshare-upload-help" style="padding-top: 5px; display: none;">
+Uploads will be posted to your connected services after they have
+finished processing, which might take a little while. Videos set to
+private will not be posted. <a class="eLink" href="#" onclick="toggleDisplay('autoshare-upload-help'); toggleDisplay('autoshare-upload-help-link'); return false;">Hide</a>
+			</div>
+		</div>
+	</div>
+	<div id="autoshare-add" class="autoshare-services" style="padding-top: 10px; margin-top: 10px;">
+		<div style="float: left; margin-right: 10px;">
+Add services:
+		</div>
+			<div id="autoshare-service-add-facebook" class="autoshare-service eLink" style="border-bottom: medium none; float: left;" onclick="connectServiceWrapper('facebook'); return false;">
+					<div style="display: inline;">
+		<div class="autoshare-service-icon">
+			<img class="img-autoshare-facebook" src="my_videos_upload_files/none-vfl36657.gif" alt="" width="16" height="16">
+		</div>
+		<span class="autoshare-service-name">Facebook</span>
+	</div>
+<span id="autoshare-service-connect-spinny-facebook" class="autoshare-spinny hid" style="padding-left: 10px; display: none;">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+			</div>
+			<div id="autoshare-service-add-twitter" class="autoshare-service eLink" style="border-bottom: medium none; float: left;" onclick="connectServiceWrapper('twitter'); return false;">
+					<div style="display: inline;">
+		<div class="autoshare-service-icon">
+			<img class="img-autoshare-twitter" src="my_videos_upload_files/none-vfl36657.gif" alt="" width="16" height="16">
+		</div>
+		<span class="autoshare-service-name">Twitter</span>
+	</div>
+<span id="autoshare-service-connect-spinny-twitter" class="autoshare-spinny hid" style="padding-left: 10px; display: none;">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+			</div>
+			<div id="autoshare-service-add-reader" class="autoshare-service eLink" style="border-bottom: medium none; float: left;" onclick="connectServiceWrapper('reader'); return false;">
+					<div style="display: inline;">
+		<div class="autoshare-service-icon">
+			<img class="img-autoshare-reader" src="my_videos_upload_files/none-vfl36657.gif" alt="" width="16" height="16">
+		</div>
+		<span class="autoshare-service-name">Google Reader</span>
+	</div>
+<span id="autoshare-service-connect-spinny-reader" class="autoshare-spinny hid" style="padding-left: 10px; display: none;">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+			</div>
+		<div style="clear: both;"></div>
+		<div id="autoshare-google-nag" class="autoshare-nag-box" style="display: none;">
+			<div style="float: left;" class="autoshare-service-icon">
+				<img class="img-failure-icon" src="my_videos_upload_files/none-vfl36657.gif" alt="" width="16" height="16">
+			</div>
+			<div style="float: left; width: 450px;">
+				<b>A Google Account needs to be linked to your YouTube account in order to use AutoShare</b>
+				<ul>
+					<li>Have a Google Account? <a href="http://www.google.com/support/youtube/bin/answer.py?answer=69964" target="_new">Link your YouTube and Google Account</a></li>
+					<li>Don't have a Google Account? <a href="https://www.google.com/accounts/NewAccount" target="_new">Create a new Google Account</a></li>
+					<li><a href="http://www.google.com/support/youtube/bin/answer.py?hl=en&amp;answer=70229" target="_new">Get more information about YouTube and Google Accounts</a></li>
+				</ul>
+			</div>
+			<div style="float: right;">
+				<a class="eLink" href="javascript:;" onclick="toggleDisplay('autoshare-google-nag'); return false;">Close</a>
+			</div>
+			<div style="clear: both;"></div>
+		</div>
+		<div id="autoshare-facebook-nag" class="autoshare-nag-box" style="display: none;">
+			<div style="float: left;" class="autoshare-service-icon">
+				<img class="img-failure-icon" src="my_videos_upload_files/none-vfl36657.gif" alt="" width="16" height="16">
+			</div>
+			<div style="float: left; width: 450px;">
+				<b>Your uploads won't be sent to Facebook because you didn't give full access for YouTube to post to Facebook.</b>
+				<ul>
+					<li><a href="javascript:;" onclick="connectServiceWrapper('facebook'); return false;" class="eLink">Change Access Settings</a></li>
+				</ul>
+			</div>
+			<div style="float: right;">
+				<a class="eLink" href="javascript:;" onclick="toggleDisplay('autoshare-facebook-nag'); return false;">Close</a>
+			</div>
+			<div style="clear: both;"></div>
+		</div>
+
+			<div class="" id="autoshare-help-all" style="padding-top: 13px; font-size: 11px;">
+				<a id="autoshare-show-help-link" class="eLink" href="#" onclick="toggleDisplay('autoshare-show-help-link'); toggleDisplay('autoshare-hide-help-link'); toggleDisplay('autoshare-help'); return false;">When will actions be shared?</a>
+				<a id="autoshare-hide-help-link" class="eLink hid" href="#" onclick="toggleDisplay('autoshare-show-help-link'); toggleDisplay('autoshare-hide-help-link'); toggleDisplay('autoshare-help'); return false;">Hide</a>
+				<div id="autoshare-help" style="padding-top: 5px; display: none;">
+Uploads will be posted to your connected services after they have
+finished processing, which might take a little while. Videos set to
+private will not be posted. All other actions (favorites, ratings,
+comments, etc.) will be posted shortly after you perform the action on
+YouTube. </div>
+			</div>
+	</div>
+	<div id="connect-frame" style="float: left; margin-right: 10px;"> 
+	</div>
+	<div style="clear: both;"></div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="about-uploading-box">
+				<h2 class="title">About Uploading</h2>
+				<ul class="constraints">
+						<li class="constraint"><strong>Capture and Upload in High Definition!</strong></li>
+					<li class="constraint">Upload up to 10 videos at a time</li>
+					<li class="constraint"><strong><a href="http://www.google.com/support/youtube/bin/answer.py?answer=132460&amp;topic=16612&amp;hl=en-US" target="_blank">Best video formats</a> for YouTube</strong></li>
+						<li class="constraint">Up to 2 GB in size.</li>
+							<li class="constraint">Up to 10 minutes in length.</li>
+				</ul>
+				<p class="instruction">Need more help? Visit the <a href="http://www.youtube.com/t/yt_handbook_home">YouTube Handbook</a></p>
+				<p class="instruction">Want to upload large numbers of videos in the background? Try our <a href="http://www.youtube.com/my_videos_multiupload">Bulk Upload Plugin</a></p>
+			</div>
+				<div id="beta-link">
+            <a href="http://www.youtube.com/my_videos_upload?beta">Try our upload progress bar (requires Flash)</a>
+				</div>
+		</div>
+		<div id="right-col">
+			<div id="instructions">
+				<p class="instruction"><b><b>Important:</b>
+Do not upload any TV shows, music videos, music concerts, or
+commercials without permission unless they consist entirely of content
+you created yourself.</b></p>
+				<p class="instruction">The <a href="http://www.youtube.com/t/howto_copyright">Copyright Tips page</a> and the <a href="http://www.youtube.com/t/community_guidelines">Community Guidelines</a> can help you determine whether your video infringes someone else's copyright.</p>
+				<p class="instruction">By clicking "Upload Video", you are representing that this video does not violate YouTube's <a id="terms-of-use-link" href="http://www.youtube.com/t/terms">Terms of Use</a> and that you own all copyrights in this video or have authorization to upload it.</p>
+			</div>
+			<div class="ad-block">
+						
+
+
+	<!-- Begin ad tag -->
+
+		<div id="ad_creative_1" class="ad-div">
+
+
+
+
+	
+
+		
+
+
+				<script type="text/javascript">
+			var google_cust_age = "1002";
+
+			var google_cust_gender = "1";
+
+			var google_language = "en";
+
+		</script>
+
+
+
+	
+	<script type="text/javascript">
+		if (window['jstiming']) {
+			window['jstiming']['addomain']="n4061ad.jp.doubleclick.net";
+		}
+		ord = Math.random()*10000000000000000;
+		add_timestamp = (Math.floor(Math.random() * 1000) == 0);
+		if (add_timestamp) {
+			kts = new Date().getTime();
+			document.write('<script language="JavaScript" src="http://n4061ad.jp.doubleclick.net/adj/com.ytupload.main/pos3;sz=300x250;kl=N;k21=1;kgender=m;kga=1002;kar=4;klg=en;kage=31;kgg=1;kt=U;kcr=jp;dc_dedup=1;kmyd=ad_creative_1;tile=1;dcopt=ist;kts='+ kts + ';ord=' + ord + '?" type="text/javascript"><\/script>');
+		} else {
+			document.write('<script language="JavaScript" src="http://n4061ad.jp.doubleclick.net/adj/com.ytupload.main/pos3;sz=300x250;kl=N;k21=1;kgender=m;kga=1002;kar=4;klg=en;kage=31;kgg=1;kt=U;kcr=jp;dc_dedup=1;kmyd=ad_creative_1;tile=1;dcopt=ist;ord=' + ord + '?" type="text/javascript"><\/script>');
+		}
+	</script><script language="JavaScript" src="my_videos_upload_files/pos3_002.js" type="text/javascript"></script><div id="dclkAdsDivID_5256"><iframe marginwidth="0" marginheight="0" style="border: 0pt none ;" src="my_videos_upload_files/a.htm" name="dclkAdsFrameName_5256" id="dclkAdsFrameID_5256" scrolling="no" width="300" height="250"></iframe></div>
+
+			<div style="font-size: 10px; padding-top: 3px;" class="alignC grayText">
+				<a href="http://www.youtube.com/t/ads_preferences">Advertisement</a>
+
+			</div>
+
+		</div>
+
+
+
+	<!-- End ad tag -->
+
+			</div>
+			
+			<div class="ad-block">
+						
+		
+
+
+	<!-- Begin ad tag -->
+
+		<div style="display: none;" id="ad_creative_2" class="ad-div">
+
+
+
+
+	
+
+		
+
+
+
+	
+	<script type="text/javascript">
+		if (window['jstiming']) {
+			window['jstiming']['addomain']="n4061ad.jp.doubleclick.net";
+		}
+		ord = Math.random()*10000000000000000;
+		add_timestamp = (Math.floor(Math.random() * 1000) == 0);
+		if (add_timestamp) {
+			kts = new Date().getTime();
+			document.write('<script language="JavaScript" src="http://n4061ad.jp.doubleclick.net/adj/com.ytupload.main/pos3;sz=300x50,300x100;kl=N;k21=1;kgender=m;kga=1002;kar=4;klg=en;kage=31;kgg=1;kt=U;kcr=jp;dc_dedup=1;kmyd=ad_creative_2;tile=2;kts='+ kts + ';ord=' + ord + '?" type="text/javascript"><\/script>');
+		} else {
+			document.write('<script language="JavaScript" src="http://n4061ad.jp.doubleclick.net/adj/com.ytupload.main/pos3;sz=300x50,300x100;kl=N;k21=1;kgender=m;kga=1002;kar=4;klg=en;kage=31;kgg=1;kt=U;kcr=jp;dc_dedup=1;kmyd=ad_creative_2;tile=2;ord=' + ord + '?" type="text/javascript"><\/script>');
+		}
+	</script><script language="JavaScript" src="my_videos_upload_files/pos3.js" type="text/javascript"></script>
+
+
+		</div>
+
+
+
+	<!-- End ad tag -->
+
+			</div>
+		</div>              
+	</div>
+	<div id="bottom-row">
+	</div>
+</div>
+<div id="templates-home">
+	<div id="file-template-first" class="file">
+	<div class="display-states">
+		<div class="html-initial-state" style="display: none;">
+					<form class="file-form" enctype="multipart/form-data" method="post" action="http://upload.youtube.com/my_videos_post">
+				<input name="uploader_type" value="Web_HTML" type="hidden">	
+				<input name="return_address" value="www.youtube.com" type="hidden">
+				<input name="upload_key" value="F046D9721B1617FE-6501BA247D8C0DCF" type="hidden">
+				<input name="action_postvideo" value="1" type="hidden">
+				<div>
+					<span class="file-form-instructions">Select a video to upload.</span>
+				</div>
+				<div class="file-upload-fields">
+					<input class="file-upload-button" name="upload-video-button" value="Upload Video" disabled="disabled" type="button">
+					<input class="file-browser" name="field_uploadfile" type="file">
+
+				</div>
+
+			<input value="09HK4XByEiErT5qCxICzWFWTp798MTI1MDUzNDA1Nw==" name="session_token" type="hidden"></form>
+		</div>
+		<div class="flash-initial-state" style="overflow: hidden; display: none;">
+			<form class="flash-form" style="display: none;">
+				<input name="uploader_type" value="Web_Flash" type="hidden">
+				<input name="return_address" value="www.youtube.com" type="hidden">
+				<input name="json_reply" value="1" type="hidden">
+				<input name="action_postvideo" value="1" type="hidden">
+				<input name="ismultiflash" value="1" type="hidden">
+				<input name="upload_key" value="F046D9721B1617FE-6501BA247D8C0DCF" type="hidden">
+			</form>
+			<input class="flash-upload-button" value="Upload Video" style="float: right;" type="button">
+					<span class="file-form-instructions">Press "Upload Video" to select and upload a video file.</span>
+		</div>
+		<div class="queued-state" style="display: none;">
+			<div class="file-details">
+				<a class="file-cancel-link eLink" href="http://www.youtube.com/my_videos_upload?error=cancel">Cancel</a>
+				<span class="file-status">Queued</span>
+				<span class="file-name"></span>
+			</div>
+			<div class="file-actions">
+				<a class="file-edit-video-link eLink" href="http://www.youtube.com/my_videos_upload?error=editmd">Add Video Name and Description, and Edit Privacy Settings</a>
+			</div>
+		</div>
+		<div class="uploading-state" style="display: none;">
+			<div class="file-details">
+				<a class="file-cancel-link eLink" href="http://www.youtube.com/my_videos_upload?error=cancel">Cancel</a>
+				<span class="file-status">Uploading</span>
+				<span class="file-icon"><img src="my_videos_upload_files/loader-vfl35975.gif"></span>
+				<span class="file-name"></span>
+			</div>
+			<div class="file-progress-bar" style="display: none;">
+				<span class="file-progress-remaining" style="display: none;"><span class="file-progress-bytes"></span> of <span class="file-progress-bytes-total"></span> - <span class="file-progress-time-remaining"></span> remaining</span>
+				<div class="file-progress-value" style="width: 0%;"><span class="file-progress-remaining" style="display: none;"><span class="file-progress-bytes"></span> of <span class="file-progress-bytes-total"></span> - <span class="file-progress-time-remaining"></span> remaining</span></div>
+			</div>
+			<div class="file-actions">
+				<a class="file-edit-video-link eLink" href="http://www.youtube.com/my_videos_upload?error=editmd">Add Video Name and Description, and Edit Privacy Settings</a>
+			</div>
+		</div>
+		<div class="success-state" style="display: none;">
+			<div class="file-details">
+				<span class="file-status">Success</span>
+				<span class="file-icon"><img class="img-success-icon" src="my_videos_upload_files/none-vfl36657.gif" alt="" width="16" height="16"></span>
+				<span class="file-name"></span>
+			</div>
+			<div class="file-actions">
+				<a class="file-share-video-link eLink" href="http://www.youtube.com/my_videos_upload?error=embed">Embed and Sharing Options</a>
+				<a class="file-edit-video-link eLink" href="http://www.youtube.com/my_videos_upload?error=editmd">Add Video Name and Description, and Edit Privacy Settings</a>
+			</div>
+		</div>
+		<div class="cancelled-state" style="display: none;">
+			<div class="file-details">
+				<a class="file-retry-link eLink" href="http://www.youtube.com/my_videos_upload?error=retry">Retry</a>
+				<span class="file-status">Cancelled</span>
+				<span class="file-icon"><img class="img-failure-icon" src="my_videos_upload_files/none-vfl36657.gif" alt="" width="16" height="16"></span>
+				<span class="file-name"></span>
+			</div>
+		</div>
+		<div class="error-state" style="display: none;">
+			<div class="file-details">
+				<a class="file-retry-link eLink" href="http://www.youtube.com/my_videos_upload?error=retry">Retry</a>
+				<span class="file-status">Error</span>
+				<span class="file-icon"><img class="img-failure-icon" src="my_videos_upload_files/none-vfl36657.gif" alt="" width="16" height="16"></span>
+				<span class="file-name"></span>
+			</div>
+		</div>
+		<div class="file-messages" style="display: none;">
+			<span class="file-message-upload-cancelled yt-message-error" style="display: none;"><b>Upload Failed:</b> User cancelled the upload.</span>
+			<span class="file-message-upload-failed yt-message-error" style="display: none;"><b>Upload Failed:</b> An unknown error occurred.</span>
+			<span class="file-message-upload-too-large yt-message-error" style="display: none;"><b>Upload Too Large:</b> The file you are uploading is too large.</span>
+			<span class="file-message-settings-saved yt-message-success" style="display: none;"><b>Pending:</b> Your video settings will be saved once your video has finished uploading.</span>
+			<span class="file-message-settings-posting yt-message-success" style="display: none;"><b>Saving:</b> Saving your video settings. <img src="my_videos_upload_files/loader-vfl35975.gif" style="vertical-align: middle;" width="16" height="16"></span> 
+			<span class="file-message-settings-posted yt-message-success" style="display: none;"><b>Success:</b> Your video settings have been successfully saved.</span>
+			<span class="file-message-settings-error yt-message-error" style="display: none;"><b>Error:</b> An error occurred trying to save your settings.</span>
+			<span class="file-message-settings-error-ro yt-message-error" style="display: none;"><b>Error:</b> We are currently performing site maintenance and are unable to save your settings. You can edit them later using My Videos.</span>
+			<span class="file-message-upload-retry yt-message-success" style="display: none;"><b>Upload Queued:</b> Your upload will be retried after the remaining videos have completed uploading.</span> 
+		</div>
+	</div>
+	<div class="video-settings-editor" style="display: none;">
+		<div class="yt-narrative-box">
+			<span class="yt-tail" style="margin-left: 40px;"></span>
+			<form class="video-settings-form" action="http://www.youtube.com/my_videos_upload_json">
+				<input name="session_token" value="mMP3h6tXLSgauln6l6647Q8wjxZ8MA==" type="hidden">
+				<input name="action_edit_video" value="1" type="hidden">
+				<input class="video-settings-updated-flag" name="updated_flag" value="0" type="hidden">
+				<input class="video-settings-id" name="video_id" value="" type="hidden">
+				<div class="video-settings-messages">
+				</div>
+				<div class="field">
+					<p class="field-header">Title</p>
+					<input class="video-settings-title textbox" name="title" type="text">
+				</div>
+				<div class="field">
+					<p class="field-header">Description</p>
+					<textarea class="video-settings-description" name="description" rows="5"></textarea>
+				</div>
+				<div class="field">
+					<p class="field-header">Tags</p>
+					<input class="video-settings-tags textbox" name="keywords" value="" type="text">
+				</div>
+				<div class="field">
+					<p class="field-header">Category</p>
+					<select class="video-settings-category" name="category">
+						<option value="" selected="selected">Please select a category:</option>
+							<option value="2">Autos &amp; Vehicles</option>
+							<option value="23">Comedy</option>
+							<option value="27">Education</option>
+							<option value="24">Entertainment</option>
+							<option value="1">Film &amp; Animation</option>
+							<option value="20">Gaming</option>
+							<option value="26">Howto &amp; Style</option>
+							<option value="10">Music</option>
+							<option value="25">News &amp; Politics</option>
+							<option value="29">Nonprofits &amp; Activism</option>
+							<option value="22">People &amp; Blogs</option>
+							<option value="15">Pets &amp; Animals</option>
+							<option value="28">Science &amp; Technology</option>
+							<option value="17">Sports</option>
+							<option value="19">Travel &amp; Events</option>
+					</select>
+				</div>
+				<div class="field">
+					<p class="field-header">Privacy</p>
+					<ul class="option-list video-settings-privacy">
+						<li class="option"><input class="video-settings-privacy-public radio" name="privacy" value="public" checked="checked" type="radio"><label for="video-settings-privacy-public">Share your video with the world (Recommended)</label></li>
+						<li class="option"><input class="video-settings-privacy-private radio" name="privacy" value="private" type="radio"><label for="video-settings-privacy-private">Private (Viewable by you and up to 25 people)</label></li>
+					</ul>
+				</div>
+				<div class="video-settings-confirm">
+					<span class="video-settings-save-button">
+						<a class="yt-button yt-button-primary" id="" style="" href="http://www.youtube.com/my_videos_upload?error=savemd" onclick=""><span>Save Changes</span></a>
+					</span>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="video-sharing-editor" style="display: none;">
+		<div class="yt-narrative-box">
+			<span class="yt-tail-right" style="margin-right: 35px;">&nbsp;</span>
+			<form>
+				<div class="field">
+					<p class="field-header">URL</p>
+					<input class="video-sharing-url textbox" value="" onclick="this.select();" readonly="readonly" type="text">
+				</div>
+				<div class="field">
+                    			<p class="field-header">Embed</p>
+					<input class="video-embed-url textbox" value="" onclick="this.select();" readonly="readonly" type="text">
+				</div>
+			</form>
+			<form class="video-embed" style="display: none;">
+				<div class="video-embed-fields">
+					<div class="field">
+						<p class="field-header">Embed Code</p>
+						<input class="video-embed-code textbox" value="" readonly="readonly" type="text">
+					</div>
+					<div class="field">
+						<p class="field-header">Color</p>
+						<div class="video-embed-color-swatches">
+							<a href="#" class="swatch" style="border-color: black;"><span class="primary-color" style="background-color: rgb(177, 177, 177);"><img class="secondary-color" src="my_videos_upload_files/pixel-vfl73.gif" style="background-color: rgb(207, 207, 207);"></span></a>
+							<a href="#" class="swatch"><span class="primary-color" style="background-color: rgb(58, 58, 58);"><img class="secondary-color" src="my_videos_upload_files/pixel-vfl73.gif" style="background-color: rgb(153, 153, 153);"></span></a>
+							<a href="#" class="swatch"><span class="primary-color" style="background-color: rgb(43, 64, 91);"><img class="secondary-color" src="my_videos_upload_files/pixel-vfl73.gif" style="background-color: rgb(107, 138, 182);"></span></a>
+							<a href="#" class="swatch"><span class="primary-color" style="background-color: rgb(0, 102, 153);"><img class="secondary-color" src="my_videos_upload_files/pixel-vfl73.gif" style="background-color: rgb(84, 171, 214);"></span></a>
+							<a href="#" class="swatch"><span class="primary-color" style="background-color: rgb(35, 73, 0);"><img class="secondary-color" src="my_videos_upload_files/pixel-vfl73.gif" style="background-color: rgb(78, 158, 0);"></span></a>
+							<a href="#" class="swatch"><span class="primary-color" style="background-color: rgb(225, 96, 15);"><img class="secondary-color" src="my_videos_upload_files/pixel-vfl73.gif" style="background-color: rgb(254, 219, 1);"></span></a>
+							<a href="#" class="swatch"><span class="primary-color" style="background-color: rgb(204, 37, 80);"><img class="secondary-color" src="my_videos_upload_files/pixel-vfl73.gif" style="background-color: rgb(232, 122, 159);"></span></a>
+							<a href="#" class="swatch"><span class="primary-color" style="background-color: rgb(64, 32, 97);"><img class="secondary-color" src="my_videos_upload_files/pixel-vfl73.gif" style="background-color: rgb(148, 97, 202);"></span></a>
+							<a href="#" class="swatch"><span class="primary-color" style="background-color: rgb(93, 23, 25);"><img class="secondary-color" src="my_videos_upload_files/pixel-vfl73.gif" style="background-color: rgb(205, 49, 27);"></span></a>
+							<a href="#" class="swatch"><span class="primary-color" style="background-color: rgb(0, 0, 0);"><img class="secondary-color" src="my_videos_upload_files/pixel-vfl73.gif" style="background-color: rgb(51, 51, 51);"></span></a>
+						</div>
+					</div>
+					<div class="video-embed-options">
+						<ul class="option-list">
+							<li class="option"><input id="video-embed-show-border" class="video-embed-show-border checkbox" name="showborder" checked="checked" type="checkbox"><label for="video-embed-show-border">Show border</label></li>
+							<li class="option"><input id="video-embed-allow-embed" class="video-embed-allow-embed checkbox" name="allowembed" type="checkbox"><label for="video-embed-allow-embed">Allow others to embed this video</label></li>
+						</ul>
+					</div>
+				</div>
+				<div class="video-embed-preview">
+					<div class="video-embed-canvas"></div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<div id="swfobject"></div>
+
+
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3482161-1");
+pageTracker._initData();
+function urchinTracker (a) {pageTracker._trackPageview(a);}
+</script>
+
+<script type="text/javascript">
+var page = "" + "/Upload" + "/" + "Upload Multiple";
+pageTracker._trackPageview(page);
+</script>
+
+
+
+
+	<div id="file-template" class="file">
+	<div class="display-states">
+		<div class="html-initial-state" style="display: none;">
+					<form class="file-form" enctype="multipart/form-data" method="post" action="http://upload.youtube.com/my_videos_post">
+				<input name="uploader_type" value="Web_HTML" type="hidden">	
+				<input name="return_address" value="www.youtube.com" type="hidden">
+				<input name="upload_key" value="F046D9721B1617FE-6501BA247D8C0DCF" type="hidden">
+				<input name="action_postvideo" value="1" type="hidden">
+				<div>
+					<span class="file-form-instructions">Select a video to upload.</span>
+				</div>
+				<div class="file-upload-fields">
+					<input class="file-upload-button" name="upload-video-button" value="Upload Video" disabled="disabled" type="button">
+					<input class="file-browser" name="field_uploadfile" type="file">
+
+				</div>
+
+			<input value="09HK4XByEiErT5qCxICzWFWTp798MTI1MDUzNDA1Nw==" name="session_token" type="hidden"></form>
+		</div>
+		<div class="flash-initial-state" style="overflow: hidden; display: none;">
+			<form class="flash-form" style="display: none;">
+				<input name="uploader_type" value="Web_Flash" type="hidden">
+				<input name="return_address" value="www.youtube.com" type="hidden">
+				<input name="json_reply" value="1" type="hidden">
+				<input name="action_postvideo" value="1" type="hidden">
+				<input name="ismultiflash" value="1" type="hidden">
+				<input name="upload_key" value="F046D9721B1617FE-6501BA247D8C0DCF" type="hidden">
+			</form>
+			<input class="flash-upload-button" value="Upload Video" style="float: right;" type="button">
+					<span class="file-form-instructions">Press "Upload Video" to select and upload another video file.</span>
+		</div>
+		<div class="queued-state" style="display: none;">
+			<div class="file-details">
+				<a class="file-cancel-link eLink" href="http://www.youtube.com/my_videos_upload?error=cancel">Cancel</a>
+				<span class="file-status">Queued</span>
+				<span class="file-name"></span>
+			</div>
+			<div class="file-actions">
+				<a class="file-edit-video-link eLink" href="http://www.youtube.com/my_videos_upload?error=editmd">Add Video Name and Description, and Edit Privacy Settings</a>
+			</div>
+		</div>
+		<div class="uploading-state" style="display: none;">
+			<div class="file-details">
+				<a class="file-cancel-link eLink" href="http://www.youtube.com/my_videos_upload?error=cancel">Cancel</a>
+				<span class="file-status">Uploading</span>
+				<span class="file-icon"><img src="my_videos_upload_files/loader-vfl35975.gif"></span>
+				<span class="file-name"></span>
+			</div>
+			<div class="file-progress-bar" style="display: none;">
+				<span class="file-progress-remaining" style="display: none;"><span class="file-progress-bytes"></span> of <span class="file-progress-bytes-total"></span> - <span class="file-progress-time-remaining"></span> remaining</span>
+				<div class="file-progress-value" style="width: 0%;"><span class="file-progress-remaining" style="display: none;"><span class="file-progress-bytes"></span> of <span class="file-progress-bytes-total"></span> - <span class="file-progress-time-remaining"></span> remaining</span></div>
+			</div>
+			<div class="file-actions">
+				<a class="file-edit-video-link eLink" href="http://www.youtube.com/my_videos_upload?error=editmd">Add Video Name and Description, and Edit Privacy Settings</a>
+			</div>
+		</div>
+		<div class="success-state" style="display: none;">
+			<div class="file-details">
+				<span class="file-status">Success</span>
+				<span class="file-icon"><img class="img-success-icon" src="my_videos_upload_files/none-vfl36657.gif" alt="" width="16" height="16"></span>
+				<span class="file-name"></span>
+			</div>
+			<div class="file-actions">
+				<a class="file-share-video-link eLink" href="http://www.youtube.com/my_videos_upload?error=embed">Embed and Sharing Options</a>
+				<a class="file-edit-video-link eLink" href="http://www.youtube.com/my_videos_upload?error=editmd">Add Video Name and Description, and Edit Privacy Settings</a>
+			</div>
+		</div>
+		<div class="cancelled-state" style="display: none;">
+			<div class="file-details">
+				<a class="file-retry-link eLink" href="http://www.youtube.com/my_videos_upload?error=retry">Retry</a>
+				<span class="file-status">Cancelled</span>
+				<span class="file-icon"><img class="img-failure-icon" src="my_videos_upload_files/none-vfl36657.gif" alt="" width="16" height="16"></span>
+				<span class="file-name"></span>
+			</div>
+		</div>
+		<div class="error-state" style="display: none;">
+			<div class="file-details">
+				<a class="file-retry-link eLink" href="http://www.youtube.com/my_videos_upload?error=retry">Retry</a>
+				<span class="file-status">Error</span>
+				<span class="file-icon"><img class="img-failure-icon" src="my_videos_upload_files/none-vfl36657.gif" alt="" width="16" height="16"></span>
+				<span class="file-name"></span>
+			</div>
+		</div>
+		<div class="file-messages" style="display: none;">
+			<span class="file-message-upload-cancelled yt-message-error" style="display: none;"><b>Upload Failed:</b> User cancelled the upload.</span>
+			<span class="file-message-upload-failed yt-message-error" style="display: none;"><b>Upload Failed:</b> An unknown error occurred.</span>
+			<span class="file-message-upload-too-large yt-message-error" style="display: none;"><b>Upload Too Large:</b> The file you are uploading is too large.</span>
+			<span class="file-message-settings-saved yt-message-success" style="display: none;"><b>Pending:</b> Your video settings will be saved once your video has finished uploading.</span>
+			<span class="file-message-settings-posting yt-message-success" style="display: none;"><b>Saving:</b> Saving your video settings. <img src="my_videos_upload_files/loader-vfl35975.gif" style="vertical-align: middle;" width="16" height="16"></span> 
+			<span class="file-message-settings-posted yt-message-success" style="display: none;"><b>Success:</b> Your video settings have been successfully saved.</span>
+			<span class="file-message-settings-error yt-message-error" style="display: none;"><b>Error:</b> An error occurred trying to save your settings.</span>
+			<span class="file-message-settings-error-ro yt-message-error" style="display: none;"><b>Error:</b> We are currently performing site maintenance and are unable to save your settings. You can edit them later using My Videos.</span>
+			<span class="file-message-upload-retry yt-message-success" style="display: none;"><b>Upload Queued:</b> Your upload will be retried after the remaining videos have completed uploading.</span> 
+		</div>
+	</div>
+	<div class="video-settings-editor" style="display: none;">
+		<div class="yt-narrative-box">
+			<span class="yt-tail" style="margin-left: 40px;"></span>
+			<form class="video-settings-form" action="http://www.youtube.com/my_videos_upload_json">
+				<input name="session_token" value="mMP3h6tXLSgauln6l6647Q8wjxZ8MA==" type="hidden">
+				<input name="action_edit_video" value="1" type="hidden">
+				<input class="video-settings-updated-flag" name="updated_flag" value="0" type="hidden">
+				<input class="video-settings-id" name="video_id" value="" type="hidden">
+				<div class="video-settings-messages">
+				</div>
+				<div class="field">
+					<p class="field-header">Title</p>
+					<input class="video-settings-title textbox" name="title" type="text">
+				</div>
+				<div class="field">
+					<p class="field-header">Description</p>
+					<textarea class="video-settings-description" name="description" rows="5"></textarea>
+				</div>
+				<div class="field">
+					<p class="field-header">Tags</p>
+					<input class="video-settings-tags textbox" name="keywords" value="" type="text">
+				</div>
+				<div class="field">
+					<p class="field-header">Category</p>
+					<select class="video-settings-category" name="category">
+						<option value="" selected="selected">Please select a category:</option>
+							<option value="2">Autos &amp; Vehicles</option>
+							<option value="23">Comedy</option>
+							<option value="27">Education</option>
+							<option value="24">Entertainment</option>
+							<option value="1">Film &amp; Animation</option>
+							<option value="20">Gaming</option>
+							<option value="26">Howto &amp; Style</option>
+							<option value="10">Music</option>
+							<option value="25">News &amp; Politics</option>
+							<option value="29">Nonprofits &amp; Activism</option>
+							<option value="22">People &amp; Blogs</option>
+							<option value="15">Pets &amp; Animals</option>
+							<option value="28">Science &amp; Technology</option>
+							<option value="17">Sports</option>
+							<option value="19">Travel &amp; Events</option>
+					</select>
+				</div>
+				<div class="field">
+					<p class="field-header">Privacy</p>
+					<ul class="option-list video-settings-privacy">
+						<li class="option"><input class="video-settings-privacy-public radio" name="privacy" value="public" checked="checked" type="radio"><label for="video-settings-privacy-public">Share your video with the world (Recommended)</label></li>
+						<li class="option"><input class="video-settings-privacy-private radio" name="privacy" value="private" type="radio"><label for="video-settings-privacy-private">Private (Viewable by you and up to 25 people)</label></li>
+					</ul>
+				</div>
+				<div class="video-settings-confirm">
+					<span class="video-settings-save-button">
+						<a class="yt-button yt-button-primary" id="" style="" href="http://www.youtube.com/my_videos_upload?error=savemd" onclick=""><span>Save Changes</span></a>
+					</span>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="video-sharing-editor" style="display: none;">
+		<div class="yt-narrative-box">
+			<span class="yt-tail-right" style="margin-right: 35px;">&nbsp;</span>
+			<form>
+				<div class="field">
+					<p class="field-header">URL</p>
+					<input class="video-sharing-url textbox" value="" onclick="this.select();" readonly="readonly" type="text">
+				</div>
+				<div class="field">
+                    			<p class="field-header">Embed</p>
+					<input class="video-embed-url textbox" value="" onclick="this.select();" readonly="readonly" type="text">
+				</div>
+			</form>
+			<form class="video-embed" style="display: none;">
+				<div class="video-embed-fields">
+					<div class="field">
+						<p class="field-header">Embed Code</p>
+						<input class="video-embed-code textbox" value="" readonly="readonly" type="text">
+					</div>
+					<div class="field">
+						<p class="field-header">Color</p>
+						<div class="video-embed-color-swatches">
+							<a href="#" class="swatch" style="border-color: black;"><span class="primary-color" style="background-color: rgb(177, 177, 177);"><img class="secondary-color" src="my_videos_upload_files/pixel-vfl73.gif" style="background-color: rgb(207, 207, 207);"></span></a>
+							<a href="#" class="swatch"><span class="primary-color" style="background-color: rgb(58, 58, 58);"><img class="secondary-color" src="my_videos_upload_files/pixel-vfl73.gif" style="background-color: rgb(153, 153, 153);"></span></a>
+							<a href="#" class="swatch"><span class="primary-color" style="background-color: rgb(43, 64, 91);"><img class="secondary-color" src="my_videos_upload_files/pixel-vfl73.gif" style="background-color: rgb(107, 138, 182);"></span></a>
+							<a href="#" class="swatch"><span class="primary-color" style="background-color: rgb(0, 102, 153);"><img class="secondary-color" src="my_videos_upload_files/pixel-vfl73.gif" style="background-color: rgb(84, 171, 214);"></span></a>
+							<a href="#" class="swatch"><span class="primary-color" style="background-color: rgb(35, 73, 0);"><img class="secondary-color" src="my_videos_upload_files/pixel-vfl73.gif" style="background-color: rgb(78, 158, 0);"></span></a>
+							<a href="#" class="swatch"><span class="primary-color" style="background-color: rgb(225, 96, 15);"><img class="secondary-color" src="my_videos_upload_files/pixel-vfl73.gif" style="background-color: rgb(254, 219, 1);"></span></a>
+							<a href="#" class="swatch"><span class="primary-color" style="background-color: rgb(204, 37, 80);"><img class="secondary-color" src="my_videos_upload_files/pixel-vfl73.gif" style="background-color: rgb(232, 122, 159);"></span></a>
+							<a href="#" class="swatch"><span class="primary-color" style="background-color: rgb(64, 32, 97);"><img class="secondary-color" src="my_videos_upload_files/pixel-vfl73.gif" style="background-color: rgb(148, 97, 202);"></span></a>
+							<a href="#" class="swatch"><span class="primary-color" style="background-color: rgb(93, 23, 25);"><img class="secondary-color" src="my_videos_upload_files/pixel-vfl73.gif" style="background-color: rgb(205, 49, 27);"></span></a>
+							<a href="#" class="swatch"><span class="primary-color" style="background-color: rgb(0, 0, 0);"><img class="secondary-color" src="my_videos_upload_files/pixel-vfl73.gif" style="background-color: rgb(51, 51, 51);"></span></a>
+						</div>
+					</div>
+					<div class="video-embed-options">
+						<ul class="option-list">
+							<li class="option"><input id="video-embed-show-border" class="video-embed-show-border checkbox" name="showborder" checked="checked" type="checkbox"><label for="video-embed-show-border">Show border</label></li>
+							<li class="option"><input id="video-embed-allow-embed" class="video-embed-allow-embed checkbox" name="allowembed" type="checkbox"><label for="video-embed-allow-embed">Allow others to embed this video</label></li>
+						</ul>
+					</div>
+				</div>
+				<div class="video-embed-preview">
+					<div class="video-embed-canvas"></div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<div id="swfobject"></div>
+
+
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3482161-1");
+pageTracker._initData();
+function urchinTracker (a) {pageTracker._trackPageview(a);}
+</script>
+
+<script type="text/javascript">
+var page = "" + "/Upload" + "/" + "Upload Multiple";
+pageTracker._trackPageview(page);
+</script>
+
+
+
+
+</div>
+<div id="logoutput"></div>
+<div id="uploaderapi_swf_placeholder">
+</div>
+
+
+
+
+	<!-- begin footer section -->
+		<div class="clear"></div>
+		<div id="chrome-promo"><a href="http://www.google.com/chrome/index.html?brand=CHMZ&amp;utm_source=en-et-yt-ftr&amp;utm_medium=et&amp;utm_campaign=en" id="chrome-link"><button class="master-sprite chrome-icon"></button><div id="chrome-tagline">Try YouTube in a new web browser!</div><div id="chrome-actionline">Download Google Chrome</div><div class="clear"></div></a></div>
+
+	<div id="footer">
+		<div class="search">
+			<div class="form-wrapper">
+				
+	<form autocomplete="off" class="search-form" action="/results" method="get" name="footer-search-form">
+		<input id="footer-search-term" class="search-term" name="search_query" onkeyup="top.goog.i18n.bidi.setDirAttribute(event,this)" value="" maxlength="128" onfocus="addClass(this, 'search-term-focus')" onblur="removeClass(this, 'search-term-focus')" type="text">
+			<input id="search-type-footer" name="search_type" value="" type="hidden">
+	<a class="yt-button yt-button-primary" id="" style="" href="#" onclick="document.searchForm.submit(); return false;"><span>Search</span></a>
+
+	</form>
+
+			</div>
+		</div>
+		<div class="links">
+			<table cellpadding="0" cellspacing="0">
+				<tbody><tr>
+					<th>YouTube</th>
+					<th>Programs</th>
+					<th>Help</th>
+						<th>Policy</th>
+					<th>Discover</th>
+				</tr>
+				<tr>
+					<td><a href="http://www.youtube.com/t/contact_us">Contact Us</a></td>
+					<td><a href="http://www.youtube.com/t/advertising">Advertising</a></td>
+					<td><a href="http://www.google.com/support/youtube/bin/static.py?page=start.cs&amp;hl=en-US">Help Resources</a></td>
+					<td><a href="http://www.youtube.com/t/privacy">Privacy Policy</a></td>
+					<td><a href="http://www.youtube.com/mobile">YouTube on Your Phone</a></td>
+				</tr>
+				<tr>
+																				<td><a href="http://www.youtube.com/t/about">Company Info</a></td>
+
+						<td><a href="http://code.google.com/apis/youtube/overview.html">Developers</a></td>
+					<td><a href="http://www.youtube.com/t/yt_handbook_home">YouTube Handbook</a></td>
+						<td><a href="http://www.youtube.com/t/terms">Terms of Service</a></td>
+					<td><a href="http://www.youtube.com/youtubeonyoursite">YouTube on Your Site</a></td>
+				</tr>
+				<tr>
+					<td><a href="http://www.youtube.com/press_room">Press Room</a></td>
+					<td><a href="http://www.youtube.com/partners">Partnerships</a></td>
+					<td><a href="http://www.google.com/support/forum/p/youtube?hl=en">Community Help Forums</a></td>
+					<td><a href="http://www.youtube.com/t/copyright_notice">Copyright Notices</a></td>
+					<td><a href="http://www.youtube.com/youtubeonyourtv">YouTube on Your TV</a></td>
+				</tr>
+				<tr>
+					<td><a href="http://ytbizblog.blogspot.com/">Business Blog</a></td>
+					<td><a href="http://www.youtube.com/t/content_management">Content Management</a></td>
+					<td><a href="http://www.google.com/support/youtube/bin/request.py?contact_type=abuse&amp;hl=en-US">Safety Center</a></td>
+					<td><a href="http://www.youtube.com/t/community_guidelines">Community Guidelines</a></td>
+					<td><a href="http://www.youtube.com/t/rss_feeds">YouTube RSS Feeds</a></td>
+				</tr>
+				<tr>
+					<td><a href="http://www.youtube.com/blog">YouTube Blog</a></td>
+					<td colspan="3"></td>
+					<td><a href="http://www.youtube.com/testtube">TestTube</a></td>
+				</tr>
+			</tbody></table>
+		</div>
+		<div class="region-and-language-pickers">
+			<div class="google-home">
+				<a href="http://www.google.com/webmasters/igoogle/youtube.html">Add YouTube to your Google homepage</a>
+			</div>
+				<div class="region-picker-box">
+		<span class="region-label">Current Location:</span>
+		<strong class="region-title">Japan</strong>
+		<a href="#" onclick="loadPicker('region-picker'); return false;">Show locations</a>
+			<div id="region-picker-container">
+				<div id="region-picker-loading" style="display: none;">Loading...</div>
+			</div>
+	</div>
+
+				<div class="language-picker-box">
+		<span class="language-label">Current Language:</span>
+		<strong class="language-title">English</strong>
+		<a href="#" onclick="loadPicker('language-picker'); return false;">Show languages</a>
+			<div id="language-picker-container">
+				<div id="language-picker-loading" style="display: none;">Loading...</div>
+			</div>
+	</div>
+
+		</div>
+	</div>
+	<div id="copyright">
+		© 2009 YouTube, LLC
+	</div>
+
+	<!-- end footer section -->
+
+	
+</div> <!-- end baseDiv -->
+
+
+
+
+
+<a name="pageBottom"></a>
+
+
+
+	
+
+
+
+<script type="text/javascript">
+		window.setTimeout(
+			"window.google.ac.install(document.searchForm,document.searchForm.search_query,'yt','en','close', \
+			'Suggestions', \
+			'Web search', \
+			-1, \
+			false)", 100);
+	</script>
+
+
+
+<table style="visibility: hidden; left: 132px; top: 40px; width: 331px;" class="google-ac-m" id="completeTable" cellpadding="0" cellspacing="0"></table><iframe style="border-width: 0pt; z-index: 1; position: absolute; display: block; left: 132px; top: 40px; width: 331px; height: 0px;" id="completeIFrame"></iframe></body></html>

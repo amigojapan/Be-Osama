@@ -1,0 +1,68 @@
+MoneyBox.Money set at code in create event for the MoneyBox
+the start up ammount of money.
+
+NoOfAntiTerrorists=round(random(100));//maybe change this value to change difficulty
+set in code in the create event of the continent_parent object
+the maximum number of anti terrorist at beginning of game
+
+
+MaxTerroristsPerRecruiterConstant=5;
+set in left mouse release event code of BtnEndTurn
+The Maximum number of Terrorists Per Recruiter per turn.
+
+MoneyPerTerroristConstant=100;
+set in left mouse release event code of BtnEndTurn
+Money you recieve per turn per Terrorist.
+
+ATMax=1000;//Maximum number of Anti Terrorists per continent
+in script attack
+
+following code all in the create event of the osama object
+//initialize variables
+
+TerrorLevelDecrementPerTurn=10;// the terror level for each continent should decrease by this percentage because of time elapsing
+
+//weapon number
+Arsenals=0;
+Bomb=0;//Needed for suicide bomber
+BirdFluVirus=0;
+SwineFlu=0;
+Anthrax=0;
+Nuke=0;
+SuicidePilots=0;
+
+//weapon prices
+PriceArsenals=1000;
+PriceBomb=100;//Needed for suicide bomber
+PriceBirdFluVirus=10000;
+PriceSwineFlu=70000;
+PriceAnthrax=1000000;
+PriceNuke=10000000;
+PriceSuicidePilots=1000000;
+
+//Terrorists needed for attack operation
+TerroristsArsenals=1000;//for ground attack;
+TerroristsBomb=100;//Needed for suicide bomber
+TerroristsBirdFluVirus=10000;
+TerroristsSwineFlu=70000;
+TerroristsAnthrax=1000000;
+TerroristsNuke=10000000;
+TerroristsSuicidePilots=1000000;
+
+//Terror Level inflicted by attack Percentage
+TerrorLevelArsenals=10;//for ground attack;
+TerrorLeveBomb=5;//Needed for suicide bomber
+TerrorLevelBirdFluVirus=20;
+TerrorLevelSwineFlu=30;
+TerrorLevelAnthrax=40;
+TerrorLevelNuke=80;
+TerrorLevelSuicidePilots=50;
+
+//Number of anti terrorists added by attack
+ATArsenals=10;//for ground attack;
+ATBomb=5;//Needed for suicide bomber
+ATBirdFluVirus=20;
+ATSwineFlu=30;
+ATAnthrax=40;
+ATNuke=80;
+ATSuicidePilots=60;

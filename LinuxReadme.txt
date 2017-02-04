@@ -1,0 +1,1 @@
+to run from Linux, unzip the archive and run from terminal, wine BeOsama.exe
